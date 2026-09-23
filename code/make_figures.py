@@ -1,5 +1,7 @@
 """Figures for the sensing/compute budget benchmark."""
-import os, numpy as np, pandas as pd
+import os, sys, numpy as np, pandas as pd
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fig_style import setup, despine, INK, INK2, MUTED, C1, C2, C3, C4, C5
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -8,15 +10,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES  = os.path.join(ROOT, "results")
 FIG  = os.path.join(ROOT, "Batteries_MDPI", "figures")
 os.makedirs(FIG, exist_ok=True)
-plt.rcParams.update({"font.size": 8, "figure.dpi": 300, "axes.grid": True,
-                     "grid.alpha": 0.3, "axes.axisbelow": True, "savefig.bbox": "tight"})
-C = {"ridge": "#1f77b4", "mlp8": "#ff7f0e", "mlp32x16": "#d62728",
-     "svr": "#2ca02c", "rf": "#9467bd", "hgb": "#8c564b"}
+setup(8.0)
+plt.rcParams.update({"figure.dpi": 300, "axes.grid": True, "axes.axisbelow": True,
+                     "savefig.bbox": "tight"})
+C6 = "#7b5cd6"
+C = {"ridge": C1, "mlp8": C2, "mlp32x16": C5, "svr": C3, "rf": C6, "hgb": C4}
 MK = {"narrow": "o", "medium": "s", "wide": "^"}
 
 def save(fig, name):
-    for ext in ("pdf", "png"):
-        fig.savefig(os.path.join(FIG, f"{name}.{ext}"))
+    fig.savefig(os.path.join(FIG, name + ".pdf"), bbox_inches="tight", pad_inches=0.02)
+    fig.savefig(os.path.join(FIG, name + ".png"), dpi=300, bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
     print("wrote", name)
 
@@ -27,6 +30,7 @@ def fig_fade():
         sub = m[m.cell.str.startswith(fam)]
         for c, g in sub.groupby("cell"):
             ax[k].plot(np.arange(len(g)), g.soh.values, lw=0.8, label=c)
+        despine(ax[k]); ax[k].grid(alpha=0.45, lw=0.5)
         ax[k].set_xlabel("cycle index"); ax[k].set_ylabel("SoH (–)")
         ax[k].set_title(f"{fam} cells"); ax[k].legend(fontsize=6, frameon=False)
     save(fig, "fig02_fade")
@@ -41,7 +45,8 @@ def fig_budget_curves():
             g = g.sort_values("n")
             ax.plot(g.n, g.rmse, marker="o", ms=3, lw=1.1, color=C.get(mdl), label=mdl)
         v = sf[sf.window == w].rmse.iloc[0]
-        ax.axhline(v, color="k", lw=1.2, ls="--",
+        despine(ax); ax.grid(alpha=0.45, lw=0.5)
+        ax.axhline(v, color=INK, lw=1.2, ls="--",
                    label="duration only (4 par.)" if w == "wide" else None)
         ax.set_xscale("log", base=2); ax.set_yscale("log")
         ax.set_xticks([4, 8, 16, 32]); ax.set_xticklabels([4, 8, 16, 32])
@@ -59,7 +64,7 @@ def fig_pareto():
     for mdl, g in b.groupby("model"):
         ax.scatter(g.bytes_int8, g.rmse, s=14, color=C.get(mdl), label=mdl, alpha=0.8,
                    edgecolor="none")
-    ax.scatter(sf.bytes_int8, sf.rmse, s=42, marker="*", color="k",
+    ax.scatter(sf.bytes_int8, sf.rmse, s=48, marker="*", color=INK,
                label="duration only", zorder=6)
     b = pd.concat([b[["bytes_int8", "rmse"]], sf[["bytes_int8", "rmse"]]], ignore_index=True)
     # Pareto front
@@ -68,7 +73,8 @@ def fig_pareto():
     for i in order:
         if pts[i, 1] < best:
             best = pts[i, 1]; fx.append(pts[i, 0]); fy.append(pts[i, 1])
-    ax.step(fx, fy, where="post", color="k", lw=1.0, ls="--", label="Pareto front")
+    ax.step(fx, fy, where="post", color=INK, lw=1.0, ls="--", label="Pareto front")
+    despine(ax); ax.grid(alpha=0.45, lw=0.5)
     ax.set_xscale("log"); ax.set_yscale("log")
     ax.set_xlabel("model memory, int8 (bytes)"); ax.set_ylabel("LOCO RMSE (SoH)")
     ax.legend(fontsize=6, frameon=False)
@@ -79,7 +85,7 @@ def fig_quant():
     s = b.dropna(subset=["rmse_int8"])
     fig, ax = plt.subplots(figsize=(3.5, 2.8))
     ax.plot([s.rmse.min()*0.9, s.rmse.max()*1.1], [s.rmse.min()*0.9, s.rmse.max()*1.1],
-            color="k", lw=0.8, ls=":")
+            color=MUTED, lw=0.8, ls=":")
     for mdl, g in s.groupby("model"):
         ax.scatter(g.rmse, g.rmse_int8, s=16, color=C.get(mdl), label=mdl, alpha=0.85, edgecolor="none")
     ax.set_xscale("log"); ax.set_yscale("log")
@@ -97,11 +103,12 @@ def fig_transfer():
         ax[0].scatter(g.rmse, g.rmse_cx2, s=16, color=C.get(mdl), label=mdl, alpha=0.85, edgecolor="none")
         ax[1].scatter(g.n, g.bias_cx2, s=16, color=C.get(mdl), alpha=0.85, edgecolor="none")
     lim = [k.rmse.min()*0.9, max(k.rmse.max(), k.rmse_cx2.max())*1.1]
-    ax[0].plot(lim, lim, color="k", lw=0.8, ls=":")
+    ax[0].plot(lim, lim, color=MUTED, lw=0.8, ls=":")
+    for a_ in ax: despine(a_); a_.grid(alpha=0.45, lw=0.5)
     ax[0].set_xscale("log"); ax[0].set_yscale("log")
     ax[0].set_xlabel("RMSE, held-out CS2 cell"); ax[0].set_ylabel("RMSE, unseen CX2 design")
     ax[0].legend(fontsize=6, frameon=False, ncol=2)
-    ax[1].axhline(0, color="k", lw=0.8)
+    ax[1].axhline(0, color=INK, lw=0.8)
     ax[1].set_xscale("log", base=2); ax[1].set_xticks([4, 8, 16, 32]); ax[1].set_xticklabels([4, 8, 16, 32])
     ax[1].set_xlabel("samples per window $N$"); ax[1].set_ylabel("mean signed error, CX2")
     save(fig, "fig06_transfer")

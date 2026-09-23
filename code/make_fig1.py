@@ -1,56 +1,103 @@
-"""Figure 1: what a sensing budget is, drawn on a real charge cycle."""
-import os, numpy as np, pandas as pd, matplotlib
-matplotlib.use("Agg")
+"""Figure 1: what a sensing budget is, drawn on a real charge cycle, and what each
+stage of the estimation chain costs."""
+import os, sys
+import numpy as np, pandas as pd
+sys.path.insert(0, os.path.dirname(__file__))
+from fig_style import *
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Circle, Rectangle, Wedge
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES, FIG = os.path.join(ROOT, "results"), os.path.join(ROOT, "Batteries_MDPI", "figures")
 os.makedirs(FIG, exist_ok=True)
-plt.rcParams.update({"font.size": 8, "figure.dpi": 300, "savefig.bbox": "tight"})
 
 m = pd.read_csv(os.path.join(RES, "cycles.csv")).reset_index(drop=True)
 z = np.load(os.path.join(RES, "windows.npz"))
 i = int(m[(m.cell == "CS2_35")].index[5])           # an early, healthy cycle
 
-fig = plt.figure(figsize=(7.2, 2.7))
-ax = fig.add_axes([0.06, 0.16, 0.40, 0.78])
+setup(8.5)
+fig = plt.figure(figsize=(7.2, 3.15))
+
+# ---------------------------------------------------------------- panel (a)
+ax = fig.add_axes([0.065, 0.135, 0.40, 0.75])
 V32 = z[f"{i}|w_wide_32_V"]; dur = float(m.iloc[i]["w_wide_32_dur"])
 t32 = np.linspace(0, dur / 60, len(V32))
-ax.plot(t32, V32, color="0.35", lw=1.2, label="CC charge (wide window)")
+ax.plot(t32, V32, color=INK2, lw=1.3, zorder=3, label="CC charge")
 xmax = t32[-1]
-for k, ((lo, hi), c, nm) in enumerate([((3.70, 4.15), "#1f77b4", "wide"),
-                                       ((3.80, 4.10), "#ff7f0e", "medium"),
-                                       ((3.90, 4.05), "#d62728", "narrow")]):
+for k, ((lo, hi), c, nm) in enumerate([((3.70, 4.15), C1, "wide"),
+                                       ((3.80, 4.10), C2, "medium"),
+                                       ((3.90, 4.05), C4, "narrow")]):
     xr = xmax * (1.05 + 0.075 * k)
-    ax.plot([xr, xr], [lo, hi], color=c, lw=3.5, solid_capstyle="butt")
-    ax.text(xr + xmax * 0.025, (lo + hi) / 2, nm, color=c, va="center", ha="left",
-            fontsize=6.5, rotation=90)
+    ax.plot([xr, xr], [lo, hi], color=c, lw=4.0, solid_capstyle="butt")
+    ax.text(xr + xmax * 0.028, (lo + hi) / 2, nm, color=c, va="center", ha="left",
+            fontsize=6.6, rotation=90, weight="bold")
     for v in (lo, hi):
         ax.plot([0, xr], [v, v], color=c, lw=0.5, ls=":", alpha=0.55)
 V4 = z[f"{i}|w_wide_4_V"]; t4 = np.linspace(0, dur / 60, 4)
-ax.plot(t4, V4, "o", ms=5, color="k", zorder=5, label="$N=4$ retained samples")
+ax.plot(t4, V4, "o", ms=5.2, color=C1, zorder=5, markeredgecolor="white",
+        markeredgewidth=0.7, label="$N=4$ retained samples")
 ax.set_xlabel("time in window (min)"); ax.set_ylabel("cell voltage (V)")
-ax.set_xlim(0, t32[-1] * 1.32); ax.grid(alpha=0.3)
-ax.legend(fontsize=6.5, frameon=False, loc="lower right")
-ax.set_title("(a) sensing budget = voltage window $\\times$ $N$ samples", fontsize=8, loc="left")
+ax.set_xlim(0, xmax * 1.32); ax.grid(alpha=0.45, lw=0.5)
+despine(ax)
+ax.legend(fontsize=6.4, loc="lower right", frameon=False)
+ax.set_title("(a)  sensing budget = voltage window $\\times$ $N$ samples",
+             fontsize=8.2, loc="left", color=INK)
 
-bx = fig.add_axes([0.54, 0.16, 0.44, 0.78]); bx.axis("off")
-bx.set_xlim(0, 10); bx.set_ylim(0, 10)
-boxes = [(0.1, "charge\nwindow", "#1f77b4"), (2.6, "$N$ samples\n$\\to$ 10 features", "#2ca02c"),
-         (5.1, "estimator", "#ff7f0e"), (7.6, "SoH", "#d62728")]
-for x, lab, c in boxes:
-    bx.add_patch(FancyBboxPatch((x, 5.0), 2.2, 1.9, boxstyle="round,pad=0.10",
-                                fc="white", ec=c, lw=1.3))
-    bx.text(x + 1.1, 5.95, lab, ha="center", va="center", fontsize=7)
-for x in (2.3, 4.8, 7.3):
-    bx.add_patch(FancyArrowPatch((x, 5.95), (x + 0.3, 5.95), arrowstyle="-|>",
-                                 mutation_scale=9, color="0.4", lw=1))
-bx.annotate("", xy=(1.2, 4.9), xytext=(1.2, 4.0), arrowprops=dict(arrowstyle="-", color="#1f77b4", lw=0.8))
-bx.text(1.2, 3.6, "sensing cost:\n$3N$ stored samples", ha="center", va="top", fontsize=6.5, color="#1f77b4")
-bx.annotate("", xy=(6.2, 4.9), xytext=(6.2, 4.0), arrowprops=dict(arrowstyle="-", color="#ff7f0e", lw=0.8))
-bx.text(6.2, 3.6, "compute cost:\nint8 bytes, MACs", ha="center", va="top", fontsize=6.5, color="#ff7f0e")
-bx.text(0.0, 8.2, "(b) what each stage costs", fontsize=8)
-for ext in ("pdf", "png"):
-    fig.savefig(os.path.join(FIG, f"fig01_concept.{ext}"))
-print("wrote fig01_concept")
+# ---------------------------------------------------------------- panel (b)
+bx = fig.add_axes([0.525, 0.135, 0.46, 0.75]); bx.axis("off")
+bx.set_xlim(0, 100); bx.set_ylim(28, 100)
+bx.text(0, 99, "(b)  what each stage costs", fontsize=8.2, color=INK, va="top")
+
+STAGES = [("charge\nwindow", C1), ("$N$ samples\n10 features", C2),
+          ("estimator", C3), ("SoH", C4)]
+bw, gap, y, bh = 20.5, 5.7, 44, 26
+for k, (lab, col) in enumerate(STAGES):
+    x = k * (bw + gap)
+    for fc, lw in ((col, 0), ("none", 1.1)):
+        bx.add_patch(FancyBboxPatch((x, y), bw, bh, boxstyle="round,pad=0,rounding_size=2.0",
+                     linewidth=lw, edgecolor=col, facecolor=fc, alpha=0.10 if lw == 0 else 1.0))
+    cy = y + bh - 7.0
+    if k == 0:
+        t = np.linspace(0, 1, 80)
+        bx.add_patch(Rectangle((x + 3.5, cy - 3.6), 13.5, 7.2, facecolor=col, alpha=0.16, linewidth=0))
+        bx.plot(x + 3.5 + 13.5 * t, cy - 3.6 + (t ** 0.55) * 7.2, color=col, lw=1.3)
+    elif k == 1:
+        t = np.linspace(0.06, 0.94, 4)
+        bx.plot(x + 3.5 + 13.5 * np.linspace(0, 1, 60),
+                cy - 3.6 + (np.linspace(0, 1, 60) ** 0.55) * 7.2, color=col, lw=0.8, alpha=0.4)
+        for tt in t:
+            bx.add_patch(Circle((x + 3.5 + 13.5 * tt, cy - 3.6 + (tt ** 0.55) * 7.2),
+                                0.85, facecolor=col, linewidth=0))
+    elif k == 2:
+        xs_l = [x + 5.0, x + 10.2, x + 15.4]
+        pos = [[(xs_l[l], cy + (np.arange(n) - (n - 1) / 2)[j] * 2.9) for j in range(n)]
+               for l, n in enumerate([3, 2, 1])]
+        for a_, b_ in zip(pos[:-1], pos[1:]):
+            for (xa, ya) in a_:
+                for (xb, yb) in b_:
+                    bx.plot([xa, xb], [ya, yb], color=col, lw=0.4, alpha=0.45, zorder=1)
+        for layer in pos:
+            for (xx, yy) in layer:
+                bx.add_patch(Circle((xx, yy), 0.9, facecolor=col, linewidth=0, alpha=0.9, zorder=2))
+    else:
+        cxg, cyg, r = x + bw / 2, cy - 2.6, 5.0
+        bx.add_patch(Wedge((cxg, cyg), r, 20, 160, width=1.5, facecolor=col, alpha=0.30, linewidth=0))
+        bx.add_patch(Wedge((cxg, cyg), r, 115, 160, width=1.5, facecolor=col, linewidth=0))
+        ang = np.deg2rad(128)
+        bx.plot([cxg, cxg + (r - 2.0) * np.cos(ang)], [cyg, cyg + (r - 2.0) * np.sin(ang)],
+                color=INK, lw=1.1)
+        bx.add_patch(Circle((cxg, cyg), 0.6, facecolor=INK, linewidth=0))
+    bx.text(x + bw / 2, y + 4.5, lab, ha="center", va="center", fontsize=7.0,
+            color=INK, linespacing=1.25)
+    if k < len(STAGES) - 1:
+        bx.add_patch(FancyArrowPatch((x + bw + 0.8, y + bh / 2), (x + bw + gap - 0.8, y + bh / 2),
+                     arrowstyle="-|>", mutation_scale=8, lw=1.0, color=MUTED))
+
+for x0_, x1_, lab, col in [(0, bw, "sensing cost:\n$3N$ stored samples", C1),
+                           (2 * (bw + gap), 2 * (bw + gap) + bw,
+                            "compute cost:\nint8 bytes, MACs", C3)]:
+    cxm = (x0_ + x1_) / 2
+    bx.plot([cxm, cxm], [y - 2.0, y - 7.0], color=col, lw=0.8)
+    bx.text(cxm, y - 9.0, lab, ha="center", va="top", fontsize=6.6, color=col, linespacing=1.3)
+
+save(fig, os.path.join(FIG, "fig01_concept"))
