@@ -7,13 +7,18 @@ from fig_style import *
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Circle, Rectangle, Wedge
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RES, FIG = os.path.join(ROOT, "results"), os.path.join(ROOT, "Batteries_MDPI", "figures")
-os.makedirs(FIG, exist_ok=True)
-
-m = pd.read_csv(os.path.join(RES, "cycles.csv")).reset_index(drop=True)
-z = np.load(os.path.join(RES, "windows.npz"))
-i = int(m[(m.cell == "CS2_35")].index[5])           # an early, healthy cycle
+import r1_lib as L
+FIG = os.path.join(L.R1, "figures")
+# R1: same cycle as v1 (sixth extracted CS2_35 cycle of the v1 retained set), read from the R1 cache
+m = L.screen(L.load_all(), "band")
+row = int(m[m.cell == "CS2_35"].row.iloc[5])
+_W = {f"{w}_{n}": L.npz()[f"{w}_{n}"][row] for w in L.WINDOWS for n in L.NS}
+class _Z(dict):
+    def __getitem__(self, k):          # k like "<i>|w_wide_32_V"
+        _, rest = k.split("|w_"); w, n, c = rest.split("_")
+        return _W[f"{w}_{n}"]["VIQ".index(c)]
+z = _Z(); i = 0
+m = pd.DataFrame([{"w_wide_32_dur": float(m[m.cell == "CS2_35"].w_wide_32_dur.iloc[5])}])
 
 setup(8.5)
 fig = plt.figure(figsize=(7.2, 3.15))
@@ -93,9 +98,9 @@ for k, (lab, col) in enumerate(STAGES):
         bx.add_patch(FancyArrowPatch((x + bw + 0.8, y + bh / 2), (x + bw + gap - 0.8, y + bh / 2),
                      arrowstyle="-|>", mutation_scale=8, lw=1.0, color=MUTED))
 
-for x0_, x1_, lab, col in [(0, bw, "sensing cost:\n$3N$ stored samples", C1),
+for x0_, x1_, lab, col in [(0, bw, "sensing cost:\n$6N$ bytes stored", C1),
                            (2 * (bw + gap), 2 * (bw + gap) + bw,
-                            "compute cost:\nint8 bytes, MACs", C3)]:
+                            "compute cost:\nmodel data, operations", C3)]:
     cxm = (x0_ + x1_) / 2
     bx.plot([cxm, cxm], [y - 2.0, y - 7.0], color=col, lw=0.8)
     bx.text(cxm, y - 9.0, lab, ha="center", va="top", fontsize=6.6, color=col, linespacing=1.3)

@@ -1,0 +1,913 @@
+window,n,model,seed,fold,rep,model_bytes,detail,ops,ops_total,converged,int8_weights,int32_biases_B,scales_B,standardiser_B,n_iter,n_sv,internal,leaves,trees
+narrow,4,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,4,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,4,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,4,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,4,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,4,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,4,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,4,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,4,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,4,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,4,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,4,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,4,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,193.0,,,,
+narrow,4,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,193.0,,,,
+narrow,4,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,193.0,,,,
+narrow,4,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,119.0,,,,
+narrow,4,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,119.0,,,,
+narrow,4,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,119.0,,,,
+narrow,4,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,120.0,,,,
+narrow,4,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,120.0,,,,
+narrow,4,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,120.0,,,,
+narrow,4,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,174.0,,,,
+narrow,4,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,174.0,,,,
+narrow,4,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,174.0,,,,
+narrow,4,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,199.0,,,,
+narrow,4,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,199.0,,,,
+narrow,4,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,199.0,,,,
+narrow,4,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,71.0,,,,
+narrow,4,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,71.0,,,,
+narrow,4,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,71.0,,,,
+narrow,4,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,127.0,,,,
+narrow,4,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,127.0,,,,
+narrow,4,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,127.0,,,,
+narrow,4,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,48.0,,,,
+narrow,4,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,48.0,,,,
+narrow,4,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,48.0,,,,
+narrow,4,svr,0,CS2_35,fp32,47212,"1071x10 f32 SV + 1071 f32 coef + b,gamma + std","{""sub"": 10720, ""mul"": 12862, ""add"": 10720, ""cmp"": 0, ""exp"": 1071, ""div"": 0}",35373,True,,,,,65377.0,1071.0,,,
+narrow,4,svr,0,CS2_35,int16,23694,"1071x10 int16 SV + 1071 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10720, ""mul"": 23572, ""add"": 10720, ""cmp"": 0, ""exp"": 1071, ""div"": 0}",46083,True,,,,,65377.0,1071.0,,,
+narrow,4,svr,0,CS2_35,int8,12984,"1071x10 int8 SV + 1071 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10720, ""mul"": 23572, ""add"": 10720, ""cmp"": 0, ""exp"": 1071, ""div"": 0}",46083,True,,,,,65377.0,1071.0,,,
+narrow,4,svr,0,CS2_35,int8all,11913,"1071x10 int8 SV + 1071 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10720, ""mul"": 23572, ""add"": 10720, ""cmp"": 0, ""exp"": 1071, ""div"": 0}",46083,True,,,,,65377.0,1071.0,,,
+narrow,4,svr,0,CS2_36,fp32,47740,"1083x10 f32 SV + 1083 f32 coef + b,gamma + std","{""sub"": 10840, ""mul"": 13006, ""add"": 10840, ""cmp"": 0, ""exp"": 1083, ""div"": 0}",35769,True,,,,,60511.0,1083.0,,,
+narrow,4,svr,0,CS2_36,int16,23958,"1083x10 int16 SV + 1083 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10840, ""mul"": 23836, ""add"": 10840, ""cmp"": 0, ""exp"": 1083, ""div"": 0}",46599,True,,,,,60511.0,1083.0,,,
+narrow,4,svr,0,CS2_36,int8,13128,"1083x10 int8 SV + 1083 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10840, ""mul"": 23836, ""add"": 10840, ""cmp"": 0, ""exp"": 1083, ""div"": 0}",46599,True,,,,,60511.0,1083.0,,,
+narrow,4,svr,0,CS2_36,int8all,12045,"1083x10 int8 SV + 1083 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10840, ""mul"": 23836, ""add"": 10840, ""cmp"": 0, ""exp"": 1083, ""div"": 0}",46599,True,,,,,60511.0,1083.0,,,
+narrow,4,svr,0,CS2_37,fp32,52052,"1181x10 f32 SV + 1181 f32 coef + b,gamma + std","{""sub"": 11820, ""mul"": 14182, ""add"": 11820, ""cmp"": 0, ""exp"": 1181, ""div"": 0}",39003,True,,,,,67434.0,1181.0,,,
+narrow,4,svr,0,CS2_37,int16,26114,"1181x10 int16 SV + 1181 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 11820, ""mul"": 25992, ""add"": 11820, ""cmp"": 0, ""exp"": 1181, ""div"": 0}",50813,True,,,,,67434.0,1181.0,,,
+narrow,4,svr,0,CS2_37,int8,14304,"1181x10 int8 SV + 1181 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 11820, ""mul"": 25992, ""add"": 11820, ""cmp"": 0, ""exp"": 1181, ""div"": 0}",50813,True,,,,,67434.0,1181.0,,,
+narrow,4,svr,0,CS2_37,int8all,13123,"1181x10 int8 SV + 1181 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 11820, ""mul"": 25992, ""add"": 11820, ""cmp"": 0, ""exp"": 1181, ""div"": 0}",50813,True,,,,,67434.0,1181.0,,,
+narrow,4,svr,0,CS2_38,fp32,44748,"1015x10 f32 SV + 1015 f32 coef + b,gamma + std","{""sub"": 10160, ""mul"": 12190, ""add"": 10160, ""cmp"": 0, ""exp"": 1015, ""div"": 0}",33525,True,,,,,56090.0,1015.0,,,
+narrow,4,svr,0,CS2_38,int16,22462,"1015x10 int16 SV + 1015 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10160, ""mul"": 22340, ""add"": 10160, ""cmp"": 0, ""exp"": 1015, ""div"": 0}",43675,True,,,,,56090.0,1015.0,,,
+narrow,4,svr,0,CS2_38,int8,12312,"1015x10 int8 SV + 1015 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10160, ""mul"": 22340, ""add"": 10160, ""cmp"": 0, ""exp"": 1015, ""div"": 0}",43675,True,,,,,56090.0,1015.0,,,
+narrow,4,svr,0,CS2_38,int8all,11297,"1015x10 int8 SV + 1015 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10160, ""mul"": 22340, ""add"": 10160, ""cmp"": 0, ""exp"": 1015, ""div"": 0}",43675,True,,,,,56090.0,1015.0,,,
+narrow,4,rf,0,CS2_35,fp32,2150032,179094 internal + 179194 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1288.3112128146454, ""exp"": 0, ""div"": 0, ""cmp_max"": 1800}",1901,True,,,,,,,179094.0,179194.0,100.0
+narrow,4,rf,0,CS2_35,int8,1254446,179094 internal + 179194 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1222.6945080091534, ""exp"": 0, ""div"": 0, ""cmp_max"": 1735}",1856,True,,,,,,,179094.0,179194.0,100.0
+narrow,4,rf,0,CS2_36,fp32,2126968,177172 internal + 177272 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1268.10395480226, ""exp"": 0, ""div"": 0, ""cmp_max"": 1769}",1870,True,,,,,,,177172.0,177272.0,100.0
+narrow,4,rf,0,CS2_36,int8,1240992,177172 internal + 177272 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1195.5197740112994, ""exp"": 0, ""div"": 0, ""cmp_max"": 1641}",1762,True,,,,,,,177172.0,177272.0,100.0
+narrow,4,rf,0,CS2_37,fp32,2074804,172825 internal + 172925 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1256.3420776495277, ""exp"": 0, ""div"": 0, ""cmp_max"": 1827}",1928,True,,,,,,,172825.0,172925.0,100.0
+narrow,4,rf,0,CS2_37,int8,1210563,172825 internal + 172925 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1168.8593913955929, ""exp"": 0, ""div"": 0, ""cmp_max"": 1801}",1922,True,,,,,,,172825.0,172925.0,100.0
+narrow,4,rf,0,CS2_38,fp32,2041012,170009 internal + 170109 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1255.09686888454, ""exp"": 0, ""div"": 0, ""cmp_max"": 2091}",2192,True,,,,,,,170009.0,170109.0,100.0
+narrow,4,rf,0,CS2_38,int8,1190851,170009 internal + 170109 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1223.6771037181995, ""exp"": 0, ""div"": 0, ""cmp_max"": 2107}",2228,True,,,,,,,170009.0,170109.0,100.0
+narrow,4,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 737.2562929061785, ""exp"": 0, ""div"": 0, ""cmp_max"": 1049}",1149,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 661.9496567505721, ""exp"": 0, ""div"": 0, ""cmp_max"": 878}",998,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 725.4101694915254, ""exp"": 0, ""div"": 0, ""cmp_max"": 976}",1076,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 669.5638418079096, ""exp"": 0, ""div"": 0, ""cmp_max"": 830}",950,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 702.6862539349423, ""exp"": 0, ""div"": 0, ""cmp_max"": 960}",1060,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 620.4291710388247, ""exp"": 0, ""div"": 0, ""cmp_max"": 796}",916,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 714.3493150684932, ""exp"": 0, ""div"": 0, ""cmp_max"": 1007}",1107,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 669.0117416829746, ""exp"": 0, ""div"": 0, ""cmp_max"": 823}",943,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,4,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,4,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,8,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,8,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,8,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,8,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,8,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,8,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,8,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,8,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,8,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,8,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,8,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,8,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,8,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,150.0,,,,
+narrow,8,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,150.0,,,,
+narrow,8,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,150.0,,,,
+narrow,8,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,121.0,,,,
+narrow,8,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,121.0,,,,
+narrow,8,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,121.0,,,,
+narrow,8,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,137.0,,,,
+narrow,8,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,137.0,,,,
+narrow,8,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,137.0,,,,
+narrow,8,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,135.0,,,,
+narrow,8,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,135.0,,,,
+narrow,8,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,135.0,,,,
+narrow,8,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,112.0,,,,
+narrow,8,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,112.0,,,,
+narrow,8,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,112.0,,,,
+narrow,8,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,79.0,,,,
+narrow,8,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,79.0,,,,
+narrow,8,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,79.0,,,,
+narrow,8,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,167.0,,,,
+narrow,8,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,167.0,,,,
+narrow,8,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,167.0,,,,
+narrow,8,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,47.0,,,,
+narrow,8,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,47.0,,,,
+narrow,8,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,47.0,,,,
+narrow,8,svr,0,CS2_35,fp32,41052,"931x10 f32 SV + 931 f32 coef + b,gamma + std","{""sub"": 9320, ""mul"": 11182, ""add"": 9320, ""cmp"": 0, ""exp"": 931, ""div"": 0}",30753,True,,,,,72041.0,931.0,,,
+narrow,8,svr,0,CS2_35,int16,20614,"931x10 int16 SV + 931 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9320, ""mul"": 20492, ""add"": 9320, ""cmp"": 0, ""exp"": 931, ""div"": 0}",40063,True,,,,,72041.0,931.0,,,
+narrow,8,svr,0,CS2_35,int8,11304,"931x10 int8 SV + 931 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9320, ""mul"": 20492, ""add"": 9320, ""cmp"": 0, ""exp"": 931, ""div"": 0}",40063,True,,,,,72041.0,931.0,,,
+narrow,8,svr,0,CS2_35,int8all,10373,"931x10 int8 SV + 931 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9320, ""mul"": 20492, ""add"": 9320, ""cmp"": 0, ""exp"": 931, ""div"": 0}",40063,True,,,,,72041.0,931.0,,,
+narrow,8,svr,0,CS2_36,fp32,42196,"957x10 f32 SV + 957 f32 coef + b,gamma + std","{""sub"": 9580, ""mul"": 11494, ""add"": 9580, ""cmp"": 0, ""exp"": 957, ""div"": 0}",31611,True,,,,,65538.0,957.0,,,
+narrow,8,svr,0,CS2_36,int16,21186,"957x10 int16 SV + 957 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9580, ""mul"": 21064, ""add"": 9580, ""cmp"": 0, ""exp"": 957, ""div"": 0}",41181,True,,,,,65538.0,957.0,,,
+narrow,8,svr,0,CS2_36,int8,11616,"957x10 int8 SV + 957 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9580, ""mul"": 21064, ""add"": 9580, ""cmp"": 0, ""exp"": 957, ""div"": 0}",41181,True,,,,,65538.0,957.0,,,
+narrow,8,svr,0,CS2_36,int8all,10659,"957x10 int8 SV + 957 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9580, ""mul"": 21064, ""add"": 9580, ""cmp"": 0, ""exp"": 957, ""div"": 0}",41181,True,,,,,65538.0,957.0,,,
+narrow,8,svr,0,CS2_37,fp32,45276,"1027x10 f32 SV + 1027 f32 coef + b,gamma + std","{""sub"": 10280, ""mul"": 12334, ""add"": 10280, ""cmp"": 0, ""exp"": 1027, ""div"": 0}",33921,True,,,,,65971.0,1027.0,,,
+narrow,8,svr,0,CS2_37,int16,22726,"1027x10 int16 SV + 1027 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10280, ""mul"": 22604, ""add"": 10280, ""cmp"": 0, ""exp"": 1027, ""div"": 0}",44191,True,,,,,65971.0,1027.0,,,
+narrow,8,svr,0,CS2_37,int8,12456,"1027x10 int8 SV + 1027 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10280, ""mul"": 22604, ""add"": 10280, ""cmp"": 0, ""exp"": 1027, ""div"": 0}",44191,True,,,,,65971.0,1027.0,,,
+narrow,8,svr,0,CS2_37,int8all,11429,"1027x10 int8 SV + 1027 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10280, ""mul"": 22604, ""add"": 10280, ""cmp"": 0, ""exp"": 1027, ""div"": 0}",44191,True,,,,,65971.0,1027.0,,,
+narrow,8,svr,0,CS2_38,fp32,40832,"926x10 f32 SV + 926 f32 coef + b,gamma + std","{""sub"": 9270, ""mul"": 11122, ""add"": 9270, ""cmp"": 0, ""exp"": 926, ""div"": 0}",30588,True,,,,,69960.0,926.0,,,
+narrow,8,svr,0,CS2_38,int16,20504,"926x10 int16 SV + 926 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9270, ""mul"": 20382, ""add"": 9270, ""cmp"": 0, ""exp"": 926, ""div"": 0}",39848,True,,,,,69960.0,926.0,,,
+narrow,8,svr,0,CS2_38,int8,11244,"926x10 int8 SV + 926 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9270, ""mul"": 20382, ""add"": 9270, ""cmp"": 0, ""exp"": 926, ""div"": 0}",39848,True,,,,,69960.0,926.0,,,
+narrow,8,svr,0,CS2_38,int8all,10318,"926x10 int8 SV + 926 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9270, ""mul"": 20382, ""add"": 9270, ""cmp"": 0, ""exp"": 926, ""div"": 0}",39848,True,,,,,69960.0,926.0,,,
+narrow,8,rf,0,CS2_35,fp32,2150104,179100 internal + 179200 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1260.675057208238, ""exp"": 0, ""div"": 0, ""cmp_max"": 1881}",1982,True,,,,,,,179100.0,179200.0,100.0
+narrow,8,rf,0,CS2_35,int8,1254488,179100 internal + 179200 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1182.8649885583525, ""exp"": 0, ""div"": 0, ""cmp_max"": 1710}",1831,True,,,,,,,179100.0,179200.0,100.0
+narrow,8,rf,0,CS2_36,fp32,2127064,177180 internal + 177280 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1256.354802259887, ""exp"": 0, ""div"": 0, ""cmp_max"": 1864}",1965,True,,,,,,,177180.0,177280.0,100.0
+narrow,8,rf,0,CS2_36,int8,1241048,177180 internal + 177280 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1191.9909604519773, ""exp"": 0, ""div"": 0, ""cmp_max"": 1783}",1904,True,,,,,,,177180.0,177280.0,100.0
+narrow,8,rf,0,CS2_37,fp32,2074900,172833 internal + 172933 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1240.8174186778595, ""exp"": 0, ""div"": 0, ""cmp_max"": 1838}",1939,True,,,,,,,172833.0,172933.0,100.0
+narrow,8,rf,0,CS2_37,int8,1210619,172833 internal + 172933 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1165.0661070304302, ""exp"": 0, ""div"": 0, ""cmp_max"": 1797}",1918,True,,,,,,,172833.0,172933.0,100.0
+narrow,8,rf,0,CS2_38,fp32,2040964,170005 internal + 170105 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1230.5205479452054, ""exp"": 0, ""div"": 0, ""cmp_max"": 1934}",2035,True,,,,,,,170005.0,170105.0,100.0
+narrow,8,rf,0,CS2_38,int8,1190823,170005 internal + 170105 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1184.7084148727984, ""exp"": 0, ""div"": 0, ""cmp_max"": 1905}",2026,True,,,,,,,170005.0,170105.0,100.0
+narrow,8,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 736.6109839816934, ""exp"": 0, ""div"": 0, ""cmp_max"": 1013}",1113,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 672.9450800915332, ""exp"": 0, ""div"": 0, ""cmp_max"": 894}",1014,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 761.419209039548, ""exp"": 0, ""div"": 0, ""cmp_max"": 980}",1080,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 733.206779661017, ""exp"": 0, ""div"": 0, ""cmp_max"": 919}",1039,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 710.8509968520461, ""exp"": 0, ""div"": 0, ""cmp_max"": 983}",1083,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 625.0125918153201, ""exp"": 0, ""div"": 0, ""cmp_max"": 787}",907,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 724.6585127201565, ""exp"": 0, ""div"": 0, ""cmp_max"": 1017}",1117,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 677.4227005870841, ""exp"": 0, ""div"": 0, ""cmp_max"": 855}",975,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,8,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,8,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,16,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,16,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,16,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,16,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,16,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,16,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,16,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,16,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,16,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,16,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,16,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,16,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,16,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,143.0,,,,
+narrow,16,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,143.0,,,,
+narrow,16,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,143.0,,,,
+narrow,16,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,157.0,,,,
+narrow,16,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,157.0,,,,
+narrow,16,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,157.0,,,,
+narrow,16,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,138.0,,,,
+narrow,16,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,138.0,,,,
+narrow,16,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,138.0,,,,
+narrow,16,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,134.0,,,,
+narrow,16,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,134.0,,,,
+narrow,16,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,134.0,,,,
+narrow,16,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,69.0,,,,
+narrow,16,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,69.0,,,,
+narrow,16,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,69.0,,,,
+narrow,16,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,123.0,,,,
+narrow,16,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,123.0,,,,
+narrow,16,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,123.0,,,,
+narrow,16,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,86.0,,,,
+narrow,16,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,86.0,,,,
+narrow,16,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,86.0,,,,
+narrow,16,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,47.0,,,,
+narrow,16,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,47.0,,,,
+narrow,16,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,47.0,,,,
+narrow,16,svr,0,CS2_35,fp32,40304,"914x10 f32 SV + 914 f32 coef + b,gamma + std","{""sub"": 9150, ""mul"": 10978, ""add"": 9150, ""cmp"": 0, ""exp"": 914, ""div"": 0}",30192,True,,,,,71806.0,914.0,,,
+narrow,16,svr,0,CS2_35,int16,20240,"914x10 int16 SV + 914 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9150, ""mul"": 20118, ""add"": 9150, ""cmp"": 0, ""exp"": 914, ""div"": 0}",39332,True,,,,,71806.0,914.0,,,
+narrow,16,svr,0,CS2_35,int8,11100,"914x10 int8 SV + 914 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9150, ""mul"": 20118, ""add"": 9150, ""cmp"": 0, ""exp"": 914, ""div"": 0}",39332,True,,,,,71806.0,914.0,,,
+narrow,16,svr,0,CS2_35,int8all,10186,"914x10 int8 SV + 914 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9150, ""mul"": 20118, ""add"": 9150, ""cmp"": 0, ""exp"": 914, ""div"": 0}",39332,True,,,,,71806.0,914.0,,,
+narrow,16,svr,0,CS2_36,fp32,40128,"910x10 f32 SV + 910 f32 coef + b,gamma + std","{""sub"": 9110, ""mul"": 10930, ""add"": 9110, ""cmp"": 0, ""exp"": 910, ""div"": 0}",30060,True,,,,,62592.0,910.0,,,
+narrow,16,svr,0,CS2_36,int16,20152,"910x10 int16 SV + 910 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9110, ""mul"": 20030, ""add"": 9110, ""cmp"": 0, ""exp"": 910, ""div"": 0}",39160,True,,,,,62592.0,910.0,,,
+narrow,16,svr,0,CS2_36,int8,11052,"910x10 int8 SV + 910 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9110, ""mul"": 20030, ""add"": 9110, ""cmp"": 0, ""exp"": 910, ""div"": 0}",39160,True,,,,,62592.0,910.0,,,
+narrow,16,svr,0,CS2_36,int8all,10142,"910x10 int8 SV + 910 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9110, ""mul"": 20030, ""add"": 9110, ""cmp"": 0, ""exp"": 910, ""div"": 0}",39160,True,,,,,62592.0,910.0,,,
+narrow,16,svr,0,CS2_37,fp32,44528,"1010x10 f32 SV + 1010 f32 coef + b,gamma + std","{""sub"": 10110, ""mul"": 12130, ""add"": 10110, ""cmp"": 0, ""exp"": 1010, ""div"": 0}",33360,True,,,,,64149.0,1010.0,,,
+narrow,16,svr,0,CS2_37,int16,22352,"1010x10 int16 SV + 1010 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10110, ""mul"": 22230, ""add"": 10110, ""cmp"": 0, ""exp"": 1010, ""div"": 0}",43460,True,,,,,64149.0,1010.0,,,
+narrow,16,svr,0,CS2_37,int8,12252,"1010x10 int8 SV + 1010 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10110, ""mul"": 22230, ""add"": 10110, ""cmp"": 0, ""exp"": 1010, ""div"": 0}",43460,True,,,,,64149.0,1010.0,,,
+narrow,16,svr,0,CS2_37,int8all,11242,"1010x10 int8 SV + 1010 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10110, ""mul"": 22230, ""add"": 10110, ""cmp"": 0, ""exp"": 1010, ""div"": 0}",43460,True,,,,,64149.0,1010.0,,,
+narrow,16,svr,0,CS2_38,fp32,40480,"918x10 f32 SV + 918 f32 coef + b,gamma + std","{""sub"": 9190, ""mul"": 11026, ""add"": 9190, ""cmp"": 0, ""exp"": 918, ""div"": 0}",30324,True,,,,,56622.0,918.0,,,
+narrow,16,svr,0,CS2_38,int16,20328,"918x10 int16 SV + 918 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9190, ""mul"": 20206, ""add"": 9190, ""cmp"": 0, ""exp"": 918, ""div"": 0}",39504,True,,,,,56622.0,918.0,,,
+narrow,16,svr,0,CS2_38,int8,11148,"918x10 int8 SV + 918 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9190, ""mul"": 20206, ""add"": 9190, ""cmp"": 0, ""exp"": 918, ""div"": 0}",39504,True,,,,,56622.0,918.0,,,
+narrow,16,svr,0,CS2_38,int8all,10230,"918x10 int8 SV + 918 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9190, ""mul"": 20206, ""add"": 9190, ""cmp"": 0, ""exp"": 918, ""div"": 0}",39504,True,,,,,56622.0,918.0,,,
+narrow,16,rf,0,CS2_35,fp32,2150212,179109 internal + 179209 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1248.6910755148742, ""exp"": 0, ""div"": 0, ""cmp_max"": 1831}",1932,True,,,,,,,179109.0,179209.0,100.0
+narrow,16,rf,0,CS2_35,int8,1254551,179109 internal + 179209 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1182.0068649885584, ""exp"": 0, ""div"": 0, ""cmp_max"": 1690}",1811,True,,,,,,,179109.0,179209.0,100.0
+narrow,16,rf,0,CS2_36,fp32,2126848,177162 internal + 177262 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1270.8056497175141, ""exp"": 0, ""div"": 0, ""cmp_max"": 1785}",1886,True,,,,,,,177162.0,177262.0,100.0
+narrow,16,rf,0,CS2_36,int8,1240922,177162 internal + 177262 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.6090395480226, ""exp"": 0, ""div"": 0, ""cmp_max"": 1774}",1895,True,,,,,,,177162.0,177262.0,100.0
+narrow,16,rf,0,CS2_37,fp32,2074900,172833 internal + 172933 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1249.6610703043023, ""exp"": 0, ""div"": 0, ""cmp_max"": 1861}",1962,True,,,,,,,172833.0,172933.0,100.0
+narrow,16,rf,0,CS2_37,int8,1210619,172833 internal + 172933 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1171.5529905561384, ""exp"": 0, ""div"": 0, ""cmp_max"": 1690}",1811,True,,,,,,,172833.0,172933.0,100.0
+narrow,16,rf,0,CS2_38,fp32,2040976,170006 internal + 170106 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1214.9696673189824, ""exp"": 0, ""div"": 0, ""cmp_max"": 1960}",2061,True,,,,,,,170006.0,170106.0,100.0
+narrow,16,rf,0,CS2_38,int8,1190830,170006 internal + 170106 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1161.1839530332682, ""exp"": 0, ""div"": 0, ""cmp_max"": 1836}",1957,True,,,,,,,170006.0,170106.0,100.0
+narrow,16,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 745.8466819221968, ""exp"": 0, ""div"": 0, ""cmp_max"": 997}",1097,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 696.395881006865, ""exp"": 0, ""div"": 0, ""cmp_max"": 853}",973,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 772.6248587570622, ""exp"": 0, ""div"": 0, ""cmp_max"": 994}",1094,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 748.0203389830508, ""exp"": 0, ""div"": 0, ""cmp_max"": 941}",1061,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 732.8530954879328, ""exp"": 0, ""div"": 0, ""cmp_max"": 973}",1073,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 663.916054564533, ""exp"": 0, ""div"": 0, ""cmp_max"": 828}",948,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 803.3307240704501, ""exp"": 0, ""div"": 0, ""cmp_max"": 1038}",1138,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 758.986301369863, ""exp"": 0, ""div"": 0, ""cmp_max"": 916}",1036,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,16,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,16,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,32,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,32,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,32,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,32,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,32,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,32,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,32,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,32,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,32,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,32,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+narrow,32,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+narrow,32,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+narrow,32,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,120.0,,,,
+narrow,32,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,120.0,,,,
+narrow,32,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,120.0,,,,
+narrow,32,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,109.0,,,,
+narrow,32,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,109.0,,,,
+narrow,32,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,109.0,,,,
+narrow,32,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,116.0,,,,
+narrow,32,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,116.0,,,,
+narrow,32,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,116.0,,,,
+narrow,32,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,123.0,,,,
+narrow,32,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,123.0,,,,
+narrow,32,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,123.0,,,,
+narrow,32,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,92.0,,,,
+narrow,32,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,92.0,,,,
+narrow,32,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,92.0,,,,
+narrow,32,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,112.0,,,,
+narrow,32,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,112.0,,,,
+narrow,32,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,112.0,,,,
+narrow,32,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,76.0,,,,
+narrow,32,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,76.0,,,,
+narrow,32,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,76.0,,,,
+narrow,32,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,54.0,,,,
+narrow,32,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,54.0,,,,
+narrow,32,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,54.0,,,,
+narrow,32,svr,0,CS2_35,fp32,38060,"863x10 f32 SV + 863 f32 coef + b,gamma + std","{""sub"": 8640, ""mul"": 10366, ""add"": 8640, ""cmp"": 0, ""exp"": 863, ""div"": 0}",28509,True,,,,,61421.0,863.0,,,
+narrow,32,svr,0,CS2_35,int16,19118,"863x10 int16 SV + 863 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8640, ""mul"": 18996, ""add"": 8640, ""cmp"": 0, ""exp"": 863, ""div"": 0}",37139,True,,,,,61421.0,863.0,,,
+narrow,32,svr,0,CS2_35,int8,10488,"863x10 int8 SV + 863 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8640, ""mul"": 18996, ""add"": 8640, ""cmp"": 0, ""exp"": 863, ""div"": 0}",37139,True,,,,,61421.0,863.0,,,
+narrow,32,svr,0,CS2_35,int8all,9625,"863x10 int8 SV + 863 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8640, ""mul"": 18996, ""add"": 8640, ""cmp"": 0, ""exp"": 863, ""div"": 0}",37139,True,,,,,61421.0,863.0,,,
+narrow,32,svr,0,CS2_36,fp32,40392,"916x10 f32 SV + 916 f32 coef + b,gamma + std","{""sub"": 9170, ""mul"": 11002, ""add"": 9170, ""cmp"": 0, ""exp"": 916, ""div"": 0}",30258,True,,,,,61231.0,916.0,,,
+narrow,32,svr,0,CS2_36,int16,20284,"916x10 int16 SV + 916 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9170, ""mul"": 20162, ""add"": 9170, ""cmp"": 0, ""exp"": 916, ""div"": 0}",39418,True,,,,,61231.0,916.0,,,
+narrow,32,svr,0,CS2_36,int8,11124,"916x10 int8 SV + 916 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9170, ""mul"": 20162, ""add"": 9170, ""cmp"": 0, ""exp"": 916, ""div"": 0}",39418,True,,,,,61231.0,916.0,,,
+narrow,32,svr,0,CS2_36,int8all,10208,"916x10 int8 SV + 916 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 9170, ""mul"": 20162, ""add"": 9170, ""cmp"": 0, ""exp"": 916, ""div"": 0}",39418,True,,,,,61231.0,916.0,,,
+narrow,32,svr,0,CS2_37,fp32,44220,"1003x10 f32 SV + 1003 f32 coef + b,gamma + std","{""sub"": 10040, ""mul"": 12046, ""add"": 10040, ""cmp"": 0, ""exp"": 1003, ""div"": 0}",33129,True,,,,,73297.0,1003.0,,,
+narrow,32,svr,0,CS2_37,int16,22198,"1003x10 int16 SV + 1003 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10040, ""mul"": 22076, ""add"": 10040, ""cmp"": 0, ""exp"": 1003, ""div"": 0}",43159,True,,,,,73297.0,1003.0,,,
+narrow,32,svr,0,CS2_37,int8,12168,"1003x10 int8 SV + 1003 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10040, ""mul"": 22076, ""add"": 10040, ""cmp"": 0, ""exp"": 1003, ""div"": 0}",43159,True,,,,,73297.0,1003.0,,,
+narrow,32,svr,0,CS2_37,int8all,11165,"1003x10 int8 SV + 1003 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 10040, ""mul"": 22076, ""add"": 10040, ""cmp"": 0, ""exp"": 1003, ""div"": 0}",43159,True,,,,,73297.0,1003.0,,,
+narrow,32,svr,0,CS2_38,fp32,38544,"874x10 f32 SV + 874 f32 coef + b,gamma + std","{""sub"": 8750, ""mul"": 10498, ""add"": 8750, ""cmp"": 0, ""exp"": 874, ""div"": 0}",28872,True,,,,,69934.0,874.0,,,
+narrow,32,svr,0,CS2_38,int16,19360,"874x10 int16 SV + 874 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8750, ""mul"": 19238, ""add"": 8750, ""cmp"": 0, ""exp"": 874, ""div"": 0}",37612,True,,,,,69934.0,874.0,,,
+narrow,32,svr,0,CS2_38,int8,10620,"874x10 int8 SV + 874 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8750, ""mul"": 19238, ""add"": 8750, ""cmp"": 0, ""exp"": 874, ""div"": 0}",37612,True,,,,,69934.0,874.0,,,
+narrow,32,svr,0,CS2_38,int8all,9746,"874x10 int8 SV + 874 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 8750, ""mul"": 19238, ""add"": 8750, ""cmp"": 0, ""exp"": 874, ""div"": 0}",37612,True,,,,,69934.0,874.0,,,
+narrow,32,rf,0,CS2_35,fp32,2150056,179096 internal + 179196 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1249.4542334096109, ""exp"": 0, ""div"": 0, ""cmp_max"": 1839}",1940,True,,,,,,,179096.0,179196.0,100.0
+narrow,32,rf,0,CS2_35,int8,1254460,179096 internal + 179196 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.2391304347825, ""exp"": 0, ""div"": 0, ""cmp_max"": 1730}",1851,True,,,,,,,179096.0,179196.0,100.0
+narrow,32,rf,0,CS2_36,fp32,2126824,177160 internal + 177260 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1287.290395480226, ""exp"": 0, ""div"": 0, ""cmp_max"": 1871}",1972,True,,,,,,,177160.0,177260.0,100.0
+narrow,32,rf,0,CS2_36,int8,1240908,177160 internal + 177260 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1217.2350282485875, ""exp"": 0, ""div"": 0, ""cmp_max"": 1763}",1884,True,,,,,,,177160.0,177260.0,100.0
+narrow,32,rf,0,CS2_37,fp32,2074816,172826 internal + 172926 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1255.2318992654775, ""exp"": 0, ""div"": 0, ""cmp_max"": 1810}",1911,True,,,,,,,172826.0,172926.0,100.0
+narrow,32,rf,0,CS2_37,int8,1210570,172826 internal + 172926 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1191.9685204616999, ""exp"": 0, ""div"": 0, ""cmp_max"": 1680}",1801,True,,,,,,,172826.0,172926.0,100.0
+narrow,32,rf,0,CS2_38,fp32,2040856,169996 internal + 170096 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1218.8062622309199, ""exp"": 0, ""div"": 0, ""cmp_max"": 1858}",1959,True,,,,,,,169996.0,170096.0,100.0
+narrow,32,rf,0,CS2_38,int8,1190760,169996 internal + 170096 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1156.4696673189824, ""exp"": 0, ""div"": 0, ""cmp_max"": 1743}",1864,True,,,,,,,169996.0,170096.0,100.0
+narrow,32,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 733.7963386727689, ""exp"": 0, ""div"": 0, ""cmp_max"": 1032}",1132,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 695.8352402745995, ""exp"": 0, ""div"": 0, ""cmp_max"": 920}",1040,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 780.632768361582, ""exp"": 0, ""div"": 0, ""cmp_max"": 992}",1092,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 756.5898305084746, ""exp"": 0, ""div"": 0, ""cmp_max"": 910}",1030,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 777.1626442812172, ""exp"": 0, ""div"": 0, ""cmp_max"": 1011}",1111,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 709.719832109129, ""exp"": 0, ""div"": 0, ""cmp_max"": 897}",1017,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 763.0675146771038, ""exp"": 0, ""div"": 0, ""cmp_max"": 1033}",1133,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 726.3473581213307, ""exp"": 0, ""div"": 0, ""cmp_max"": 922}",1042,True,,,,,100.0,,3000.0,3100.0,100.0
+narrow,32,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+narrow,32,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,4,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,4,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,4,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,4,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,4,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,4,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,4,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,4,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,4,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,4,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,4,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,4,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,4,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,96.0,,,,
+medium,4,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,96.0,,,,
+medium,4,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,96.0,,,,
+medium,4,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,102.0,,,,
+medium,4,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,102.0,,,,
+medium,4,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,102.0,,,,
+medium,4,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,156.0,,,,
+medium,4,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,156.0,,,,
+medium,4,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,156.0,,,,
+medium,4,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,103.0,,,,
+medium,4,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,103.0,,,,
+medium,4,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,103.0,,,,
+medium,4,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,58.0,,,,
+medium,4,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,58.0,,,,
+medium,4,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,58.0,,,,
+medium,4,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,55.0,,,,
+medium,4,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,55.0,,,,
+medium,4,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,55.0,,,,
+medium,4,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,49.0,,,,
+medium,4,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,49.0,,,,
+medium,4,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,49.0,,,,
+medium,4,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,60.0,,,,
+medium,4,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,60.0,,,,
+medium,4,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,60.0,,,,
+medium,4,svr,0,CS2_35,fp32,16148,"365x10 f32 SV + 365 f32 coef + b,gamma + std","{""sub"": 3660, ""mul"": 4390, ""add"": 3660, ""cmp"": 0, ""exp"": 365, ""div"": 0}",12075,True,,,,,33116.0,365.0,,,
+medium,4,svr,0,CS2_35,int16,8162,"365x10 int16 SV + 365 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3660, ""mul"": 8040, ""add"": 3660, ""cmp"": 0, ""exp"": 365, ""div"": 0}",15725,True,,,,,33116.0,365.0,,,
+medium,4,svr,0,CS2_35,int8,4512,"365x10 int8 SV + 365 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3660, ""mul"": 8040, ""add"": 3660, ""cmp"": 0, ""exp"": 365, ""div"": 0}",15725,True,,,,,33116.0,365.0,,,
+medium,4,svr,0,CS2_35,int8all,4147,"365x10 int8 SV + 365 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3660, ""mul"": 8040, ""add"": 3660, ""cmp"": 0, ""exp"": 365, ""div"": 0}",15725,True,,,,,33116.0,365.0,,,
+medium,4,svr,0,CS2_36,fp32,16368,"370x10 f32 SV + 370 f32 coef + b,gamma + std","{""sub"": 3710, ""mul"": 4450, ""add"": 3710, ""cmp"": 0, ""exp"": 370, ""div"": 0}",12240,True,,,,,34121.0,370.0,,,
+medium,4,svr,0,CS2_36,int16,8272,"370x10 int16 SV + 370 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3710, ""mul"": 8150, ""add"": 3710, ""cmp"": 0, ""exp"": 370, ""div"": 0}",15940,True,,,,,34121.0,370.0,,,
+medium,4,svr,0,CS2_36,int8,4572,"370x10 int8 SV + 370 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3710, ""mul"": 8150, ""add"": 3710, ""cmp"": 0, ""exp"": 370, ""div"": 0}",15940,True,,,,,34121.0,370.0,,,
+medium,4,svr,0,CS2_36,int8all,4202,"370x10 int8 SV + 370 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3710, ""mul"": 8150, ""add"": 3710, ""cmp"": 0, ""exp"": 370, ""div"": 0}",15940,True,,,,,34121.0,370.0,,,
+medium,4,svr,0,CS2_37,fp32,18084,"409x10 f32 SV + 409 f32 coef + b,gamma + std","{""sub"": 4100, ""mul"": 4918, ""add"": 4100, ""cmp"": 0, ""exp"": 409, ""div"": 0}",13527,True,,,,,39461.0,409.0,,,
+medium,4,svr,0,CS2_37,int16,9130,"409x10 int16 SV + 409 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4100, ""mul"": 9008, ""add"": 4100, ""cmp"": 0, ""exp"": 409, ""div"": 0}",17617,True,,,,,39461.0,409.0,,,
+medium,4,svr,0,CS2_37,int8,5040,"409x10 int8 SV + 409 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4100, ""mul"": 9008, ""add"": 4100, ""cmp"": 0, ""exp"": 409, ""div"": 0}",17617,True,,,,,39461.0,409.0,,,
+medium,4,svr,0,CS2_37,int8all,4631,"409x10 int8 SV + 409 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4100, ""mul"": 9008, ""add"": 4100, ""cmp"": 0, ""exp"": 409, ""div"": 0}",17617,True,,,,,39461.0,409.0,,,
+medium,4,svr,0,CS2_38,fp32,16060,"363x10 f32 SV + 363 f32 coef + b,gamma + std","{""sub"": 3640, ""mul"": 4366, ""add"": 3640, ""cmp"": 0, ""exp"": 363, ""div"": 0}",12009,True,,,,,30001.0,363.0,,,
+medium,4,svr,0,CS2_38,int16,8118,"363x10 int16 SV + 363 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3640, ""mul"": 7996, ""add"": 3640, ""cmp"": 0, ""exp"": 363, ""div"": 0}",15639,True,,,,,30001.0,363.0,,,
+medium,4,svr,0,CS2_38,int8,4488,"363x10 int8 SV + 363 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3640, ""mul"": 7996, ""add"": 3640, ""cmp"": 0, ""exp"": 363, ""div"": 0}",15639,True,,,,,30001.0,363.0,,,
+medium,4,svr,0,CS2_38,int8all,4125,"363x10 int8 SV + 363 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3640, ""mul"": 7996, ""add"": 3640, ""cmp"": 0, ""exp"": 363, ""div"": 0}",15639,True,,,,,30001.0,363.0,,,
+medium,4,rf,0,CS2_35,fp32,2150200,179108 internal + 179208 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1213.195652173913, ""exp"": 0, ""div"": 0, ""cmp_max"": 1675}",1776,True,,,,,,,179108.0,179208.0,100.0
+medium,4,rf,0,CS2_35,int8,1254544,179108 internal + 179208 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.6075514874142, ""exp"": 0, ""div"": 0, ""cmp_max"": 1641}",1762,True,,,,,,,179108.0,179208.0,100.0
+medium,4,rf,0,CS2_36,fp32,2126800,177158 internal + 177258 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1215.2666666666667, ""exp"": 0, ""div"": 0, ""cmp_max"": 1726}",1827,True,,,,,,,177158.0,177258.0,100.0
+medium,4,rf,0,CS2_36,int8,1240894,177158 internal + 177258 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.929943502825, ""exp"": 0, ""div"": 0, ""cmp_max"": 1703}",1824,True,,,,,,,177158.0,177258.0,100.0
+medium,4,rf,0,CS2_37,fp32,2075104,172850 internal + 172950 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1216.074501573977, ""exp"": 0, ""div"": 0, ""cmp_max"": 1693}",1794,True,,,,,,,172850.0,172950.0,100.0
+medium,4,rf,0,CS2_37,int8,1210738,172850 internal + 172950 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1198.6421825813222, ""exp"": 0, ""div"": 0, ""cmp_max"": 1543}",1664,True,,,,,,,172850.0,172950.0,100.0
+medium,4,rf,0,CS2_38,fp32,2040976,170006 internal + 170106 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1189.3131115459882, ""exp"": 0, ""div"": 0, ""cmp_max"": 1861}",1962,True,,,,,,,170006.0,170106.0,100.0
+medium,4,rf,0,CS2_38,int8,1190830,170006 internal + 170106 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1173.4823874755382, ""exp"": 0, ""div"": 0, ""cmp_max"": 1586}",1707,True,,,,,,,170006.0,170106.0,100.0
+medium,4,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 804.70823798627, ""exp"": 0, ""div"": 0, ""cmp_max"": 926}",1026,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 808.8123569794051, ""exp"": 0, ""div"": 0, ""cmp_max"": 928}",1048,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 831.8, ""exp"": 0, ""div"": 0, ""cmp_max"": 1019}",1119,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 816.5830508474576, ""exp"": 0, ""div"": 0, ""cmp_max"": 1003}",1123,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 770.9045120671564, ""exp"": 0, ""div"": 0, ""cmp_max"": 936}",1036,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 772.5047219307451, ""exp"": 0, ""div"": 0, ""cmp_max"": 915}",1035,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 784.2592954990215, ""exp"": 0, ""div"": 0, ""cmp_max"": 935}",1035,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 782.9784735812133, ""exp"": 0, ""div"": 0, ""cmp_max"": 931}",1051,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,4,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,4,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,8,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,8,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,8,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,8,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,8,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,8,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,8,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,8,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,8,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,8,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,8,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,8,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,8,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,218.0,,,,
+medium,8,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,218.0,,,,
+medium,8,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,218.0,,,,
+medium,8,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,135.0,,,,
+medium,8,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,135.0,,,,
+medium,8,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,135.0,,,,
+medium,8,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,173.0,,,,
+medium,8,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,173.0,,,,
+medium,8,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,173.0,,,,
+medium,8,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,125.0,,,,
+medium,8,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,125.0,,,,
+medium,8,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,125.0,,,,
+medium,8,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,35.0,,,,
+medium,8,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,35.0,,,,
+medium,8,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,35.0,,,,
+medium,8,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,35.0,,,,
+medium,8,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,35.0,,,,
+medium,8,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,35.0,,,,
+medium,8,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,41.0,,,,
+medium,8,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,41.0,,,,
+medium,8,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,41.0,,,,
+medium,8,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,40.0,,,,
+medium,8,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,40.0,,,,
+medium,8,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,40.0,,,,
+medium,8,svr,0,CS2_35,fp32,16324,"369x10 f32 SV + 369 f32 coef + b,gamma + std","{""sub"": 3700, ""mul"": 4438, ""add"": 3700, ""cmp"": 0, ""exp"": 369, ""div"": 0}",12207,True,,,,,39045.0,369.0,,,
+medium,8,svr,0,CS2_35,int16,8250,"369x10 int16 SV + 369 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3700, ""mul"": 8128, ""add"": 3700, ""cmp"": 0, ""exp"": 369, ""div"": 0}",15897,True,,,,,39045.0,369.0,,,
+medium,8,svr,0,CS2_35,int8,4560,"369x10 int8 SV + 369 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3700, ""mul"": 8128, ""add"": 3700, ""cmp"": 0, ""exp"": 369, ""div"": 0}",15897,True,,,,,39045.0,369.0,,,
+medium,8,svr,0,CS2_35,int8all,4191,"369x10 int8 SV + 369 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3700, ""mul"": 8128, ""add"": 3700, ""cmp"": 0, ""exp"": 369, ""div"": 0}",15897,True,,,,,39045.0,369.0,,,
+medium,8,svr,0,CS2_36,fp32,17204,"389x10 f32 SV + 389 f32 coef + b,gamma + std","{""sub"": 3900, ""mul"": 4678, ""add"": 3900, ""cmp"": 0, ""exp"": 389, ""div"": 0}",12867,True,,,,,44982.0,389.0,,,
+medium,8,svr,0,CS2_36,int16,8690,"389x10 int16 SV + 389 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3900, ""mul"": 8568, ""add"": 3900, ""cmp"": 0, ""exp"": 389, ""div"": 0}",16757,True,,,,,44982.0,389.0,,,
+medium,8,svr,0,CS2_36,int8,4800,"389x10 int8 SV + 389 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3900, ""mul"": 8568, ""add"": 3900, ""cmp"": 0, ""exp"": 389, ""div"": 0}",16757,True,,,,,44982.0,389.0,,,
+medium,8,svr,0,CS2_36,int8all,4411,"389x10 int8 SV + 389 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3900, ""mul"": 8568, ""add"": 3900, ""cmp"": 0, ""exp"": 389, ""div"": 0}",16757,True,,,,,44982.0,389.0,,,
+medium,8,svr,0,CS2_37,fp32,18832,"426x10 f32 SV + 426 f32 coef + b,gamma + std","{""sub"": 4270, ""mul"": 5122, ""add"": 4270, ""cmp"": 0, ""exp"": 426, ""div"": 0}",14088,True,,,,,47381.0,426.0,,,
+medium,8,svr,0,CS2_37,int16,9504,"426x10 int16 SV + 426 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4270, ""mul"": 9382, ""add"": 4270, ""cmp"": 0, ""exp"": 426, ""div"": 0}",18348,True,,,,,47381.0,426.0,,,
+medium,8,svr,0,CS2_37,int8,5244,"426x10 int8 SV + 426 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4270, ""mul"": 9382, ""add"": 4270, ""cmp"": 0, ""exp"": 426, ""div"": 0}",18348,True,,,,,47381.0,426.0,,,
+medium,8,svr,0,CS2_37,int8all,4818,"426x10 int8 SV + 426 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4270, ""mul"": 9382, ""add"": 4270, ""cmp"": 0, ""exp"": 426, ""div"": 0}",18348,True,,,,,47381.0,426.0,,,
+medium,8,svr,0,CS2_38,fp32,17160,"388x10 f32 SV + 388 f32 coef + b,gamma + std","{""sub"": 3890, ""mul"": 4666, ""add"": 3890, ""cmp"": 0, ""exp"": 388, ""div"": 0}",12834,True,,,,,38683.0,388.0,,,
+medium,8,svr,0,CS2_38,int16,8668,"388x10 int16 SV + 388 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3890, ""mul"": 8546, ""add"": 3890, ""cmp"": 0, ""exp"": 388, ""div"": 0}",16714,True,,,,,38683.0,388.0,,,
+medium,8,svr,0,CS2_38,int8,4788,"388x10 int8 SV + 388 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3890, ""mul"": 8546, ""add"": 3890, ""cmp"": 0, ""exp"": 388, ""div"": 0}",16714,True,,,,,38683.0,388.0,,,
+medium,8,svr,0,CS2_38,int8all,4400,"388x10 int8 SV + 388 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3890, ""mul"": 8546, ""add"": 3890, ""cmp"": 0, ""exp"": 388, ""div"": 0}",16714,True,,,,,38683.0,388.0,,,
+medium,8,rf,0,CS2_35,fp32,2149816,179076 internal + 179176 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1200.4736842105262, ""exp"": 0, ""div"": 0, ""cmp_max"": 1676}",1777,True,,,,,,,179076.0,179176.0,100.0
+medium,8,rf,0,CS2_35,int8,1254320,179076 internal + 179176 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1171.3821510297482, ""exp"": 0, ""div"": 0, ""cmp_max"": 1594}",1715,True,,,,,,,179076.0,179176.0,100.0
+medium,8,rf,0,CS2_36,fp32,2126860,177163 internal + 177263 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1215.8418079096045, ""exp"": 0, ""div"": 0, ""cmp_max"": 1755}",1856,True,,,,,,,177163.0,177263.0,100.0
+medium,8,rf,0,CS2_36,int8,1240929,177163 internal + 177263 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1200.265536723164, ""exp"": 0, ""div"": 0, ""cmp_max"": 1741}",1862,True,,,,,,,177163.0,177263.0,100.0
+medium,8,rf,0,CS2_37,fp32,2074648,172812 internal + 172912 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1210.0807974816369, ""exp"": 0, ""div"": 0, ""cmp_max"": 1751}",1852,True,,,,,,,172812.0,172912.0,100.0
+medium,8,rf,0,CS2_37,int8,1210472,172812 internal + 172912 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1189.05351521511, ""exp"": 0, ""div"": 0, ""cmp_max"": 1672}",1793,True,,,,,,,172812.0,172912.0,100.0
+medium,8,rf,0,CS2_38,fp32,2040772,169989 internal + 170089 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1204.6937377690801, ""exp"": 0, ""div"": 0, ""cmp_max"": 1715}",1816,True,,,,,,,169989.0,170089.0,100.0
+medium,8,rf,0,CS2_38,int8,1190711,169989 internal + 170089 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1195.1663405088063, ""exp"": 0, ""div"": 0, ""cmp_max"": 1582}",1703,True,,,,,,,169989.0,170089.0,100.0
+medium,8,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 776.2826086956521, ""exp"": 0, ""div"": 0, ""cmp_max"": 935}",1035,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 770.7723112128147, ""exp"": 0, ""div"": 0, ""cmp_max"": 940}",1060,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 811.1785310734464, ""exp"": 0, ""div"": 0, ""cmp_max"": 947}",1047,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 800.5310734463277, ""exp"": 0, ""div"": 0, ""cmp_max"": 934}",1054,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 766.9632738719832, ""exp"": 0, ""div"": 0, ""cmp_max"": 898}",998,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 755.5781741867786, ""exp"": 0, ""div"": 0, ""cmp_max"": 873}",993,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 792.1291585127202, ""exp"": 0, ""div"": 0, ""cmp_max"": 952}",1052,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 788.9481409001957, ""exp"": 0, ""div"": 0, ""cmp_max"": 951}",1071,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,8,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,8,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,16,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,16,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,16,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,16,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,16,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,16,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,16,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,16,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,16,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,16,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,16,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,16,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,16,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,112.0,,,,
+medium,16,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,112.0,,,,
+medium,16,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,112.0,,,,
+medium,16,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,134.0,,,,
+medium,16,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,134.0,,,,
+medium,16,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,134.0,,,,
+medium,16,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,132.0,,,,
+medium,16,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,132.0,,,,
+medium,16,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,132.0,,,,
+medium,16,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,110.0,,,,
+medium,16,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,110.0,,,,
+medium,16,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,110.0,,,,
+medium,16,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,42.0,,,,
+medium,16,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,42.0,,,,
+medium,16,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,42.0,,,,
+medium,16,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,62.0,,,,
+medium,16,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,62.0,,,,
+medium,16,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,62.0,,,,
+medium,16,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,41.0,,,,
+medium,16,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,41.0,,,,
+medium,16,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,41.0,,,,
+medium,16,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,40.0,,,,
+medium,16,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,40.0,,,,
+medium,16,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,40.0,,,,
+medium,16,svr,0,CS2_35,fp32,15884,"359x10 f32 SV + 359 f32 coef + b,gamma + std","{""sub"": 3600, ""mul"": 4318, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",11877,True,,,,,40484.0,359.0,,,
+medium,16,svr,0,CS2_35,int16,8030,"359x10 int16 SV + 359 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,40484.0,359.0,,,
+medium,16,svr,0,CS2_35,int8,4440,"359x10 int8 SV + 359 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,40484.0,359.0,,,
+medium,16,svr,0,CS2_35,int8all,4081,"359x10 int8 SV + 359 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,40484.0,359.0,,,
+medium,16,svr,0,CS2_36,fp32,16016,"362x10 f32 SV + 362 f32 coef + b,gamma + std","{""sub"": 3630, ""mul"": 4354, ""add"": 3630, ""cmp"": 0, ""exp"": 362, ""div"": 0}",11976,True,,,,,38194.0,362.0,,,
+medium,16,svr,0,CS2_36,int16,8096,"362x10 int16 SV + 362 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3630, ""mul"": 7974, ""add"": 3630, ""cmp"": 0, ""exp"": 362, ""div"": 0}",15596,True,,,,,38194.0,362.0,,,
+medium,16,svr,0,CS2_36,int8,4476,"362x10 int8 SV + 362 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3630, ""mul"": 7974, ""add"": 3630, ""cmp"": 0, ""exp"": 362, ""div"": 0}",15596,True,,,,,38194.0,362.0,,,
+medium,16,svr,0,CS2_36,int8all,4114,"362x10 int8 SV + 362 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3630, ""mul"": 7974, ""add"": 3630, ""cmp"": 0, ""exp"": 362, ""div"": 0}",15596,True,,,,,38194.0,362.0,,,
+medium,16,svr,0,CS2_37,fp32,17996,"407x10 f32 SV + 407 f32 coef + b,gamma + std","{""sub"": 4080, ""mul"": 4894, ""add"": 4080, ""cmp"": 0, ""exp"": 407, ""div"": 0}",13461,True,,,,,46697.0,407.0,,,
+medium,16,svr,0,CS2_37,int16,9086,"407x10 int16 SV + 407 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4080, ""mul"": 8964, ""add"": 4080, ""cmp"": 0, ""exp"": 407, ""div"": 0}",17531,True,,,,,46697.0,407.0,,,
+medium,16,svr,0,CS2_37,int8,5016,"407x10 int8 SV + 407 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4080, ""mul"": 8964, ""add"": 4080, ""cmp"": 0, ""exp"": 407, ""div"": 0}",17531,True,,,,,46697.0,407.0,,,
+medium,16,svr,0,CS2_37,int8all,4609,"407x10 int8 SV + 407 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4080, ""mul"": 8964, ""add"": 4080, ""cmp"": 0, ""exp"": 407, ""div"": 0}",17531,True,,,,,46697.0,407.0,,,
+medium,16,svr,0,CS2_38,fp32,15796,"357x10 f32 SV + 357 f32 coef + b,gamma + std","{""sub"": 3580, ""mul"": 4294, ""add"": 3580, ""cmp"": 0, ""exp"": 357, ""div"": 0}",11811,True,,,,,35843.0,357.0,,,
+medium,16,svr,0,CS2_38,int16,7986,"357x10 int16 SV + 357 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3580, ""mul"": 7864, ""add"": 3580, ""cmp"": 0, ""exp"": 357, ""div"": 0}",15381,True,,,,,35843.0,357.0,,,
+medium,16,svr,0,CS2_38,int8,4416,"357x10 int8 SV + 357 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3580, ""mul"": 7864, ""add"": 3580, ""cmp"": 0, ""exp"": 357, ""div"": 0}",15381,True,,,,,35843.0,357.0,,,
+medium,16,svr,0,CS2_38,int8all,4059,"357x10 int8 SV + 357 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3580, ""mul"": 7864, ""add"": 3580, ""cmp"": 0, ""exp"": 357, ""div"": 0}",15381,True,,,,,35843.0,357.0,,,
+medium,16,rf,0,CS2_35,fp32,2149852,179079 internal + 179179 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1200.7734553775745, ""exp"": 0, ""div"": 0, ""cmp_max"": 1644}",1745,True,,,,,,,179079.0,179179.0,100.0
+medium,16,rf,0,CS2_35,int8,1254341,179079 internal + 179179 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1185.840961098398, ""exp"": 0, ""div"": 0, ""cmp_max"": 1582}",1703,True,,,,,,,179079.0,179179.0,100.0
+medium,16,rf,0,CS2_36,fp32,2126824,177160 internal + 177260 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1215.0135593220339, ""exp"": 0, ""div"": 0, ""cmp_max"": 1653}",1754,True,,,,,,,177160.0,177260.0,100.0
+medium,16,rf,0,CS2_36,int8,1240908,177160 internal + 177260 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1204.070056497175, ""exp"": 0, ""div"": 0, ""cmp_max"": 1698}",1819,True,,,,,,,177160.0,177260.0,100.0
+medium,16,rf,0,CS2_37,fp32,2074672,172814 internal + 172914 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1193.8027282266528, ""exp"": 0, ""div"": 0, ""cmp_max"": 1568}",1669,True,,,,,,,172814.0,172914.0,100.0
+medium,16,rf,0,CS2_37,int8,1210486,172814 internal + 172914 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1174.504721930745, ""exp"": 0, ""div"": 0, ""cmp_max"": 1601}",1722,True,,,,,,,172814.0,172914.0,100.0
+medium,16,rf,0,CS2_38,fp32,2040964,170005 internal + 170105 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1204.5127201565558, ""exp"": 0, ""div"": 0, ""cmp_max"": 1762}",1863,True,,,,,,,170005.0,170105.0,100.0
+medium,16,rf,0,CS2_38,int8,1190823,170005 internal + 170105 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1190.9099804305283, ""exp"": 0, ""div"": 0, ""cmp_max"": 1607}",1728,True,,,,,,,170005.0,170105.0,100.0
+medium,16,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 771.9176201372998, ""exp"": 0, ""div"": 0, ""cmp_max"": 864}",964,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 768.0697940503433, ""exp"": 0, ""div"": 0, ""cmp_max"": 862}",982,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 799.9887005649717, ""exp"": 0, ""div"": 0, ""cmp_max"": 945}",1045,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 772.4395480225988, ""exp"": 0, ""div"": 0, ""cmp_max"": 939}",1059,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 762.8866736621196, ""exp"": 0, ""div"": 0, ""cmp_max"": 919}",1019,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 738.3672612801679, ""exp"": 0, ""div"": 0, ""cmp_max"": 903}",1023,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 842.3189823874756, ""exp"": 0, ""div"": 0, ""cmp_max"": 1028}",1128,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 833.8405088062623, ""exp"": 0, ""div"": 0, ""cmp_max"": 1009}",1129,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,16,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,16,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,32,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,32,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,32,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,32,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,32,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,32,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,32,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,32,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,32,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,32,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+medium,32,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+medium,32,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+medium,32,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,116.0,,,,
+medium,32,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,116.0,,,,
+medium,32,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,116.0,,,,
+medium,32,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,122.0,,,,
+medium,32,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,122.0,,,,
+medium,32,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,122.0,,,,
+medium,32,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,83.0,,,,
+medium,32,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,83.0,,,,
+medium,32,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,83.0,,,,
+medium,32,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,142.0,,,,
+medium,32,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,142.0,,,,
+medium,32,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,142.0,,,,
+medium,32,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,72.0,,,,
+medium,32,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,72.0,,,,
+medium,32,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,72.0,,,,
+medium,32,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,70.0,,,,
+medium,32,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,70.0,,,,
+medium,32,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,70.0,,,,
+medium,32,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,56.0,,,,
+medium,32,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,56.0,,,,
+medium,32,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,56.0,,,,
+medium,32,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,71.0,,,,
+medium,32,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,71.0,,,,
+medium,32,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,71.0,,,,
+medium,32,svr,0,CS2_35,fp32,16456,"372x10 f32 SV + 372 f32 coef + b,gamma + std","{""sub"": 3730, ""mul"": 4474, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",12306,True,,,,,39712.0,372.0,,,
+medium,32,svr,0,CS2_35,int16,8316,"372x10 int16 SV + 372 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,39712.0,372.0,,,
+medium,32,svr,0,CS2_35,int8,4596,"372x10 int8 SV + 372 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,39712.0,372.0,,,
+medium,32,svr,0,CS2_35,int8all,4224,"372x10 int8 SV + 372 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,39712.0,372.0,,,
+medium,32,svr,0,CS2_36,fp32,16456,"372x10 f32 SV + 372 f32 coef + b,gamma + std","{""sub"": 3730, ""mul"": 4474, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",12306,True,,,,,41717.0,372.0,,,
+medium,32,svr,0,CS2_36,int16,8316,"372x10 int16 SV + 372 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,41717.0,372.0,,,
+medium,32,svr,0,CS2_36,int8,4596,"372x10 int8 SV + 372 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,41717.0,372.0,,,
+medium,32,svr,0,CS2_36,int8all,4224,"372x10 int8 SV + 372 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3730, ""mul"": 8194, ""add"": 3730, ""cmp"": 0, ""exp"": 372, ""div"": 0}",16026,True,,,,,41717.0,372.0,,,
+medium,32,svr,0,CS2_37,fp32,18172,"411x10 f32 SV + 411 f32 coef + b,gamma + std","{""sub"": 4120, ""mul"": 4942, ""add"": 4120, ""cmp"": 0, ""exp"": 411, ""div"": 0}",13593,True,,,,,48680.0,411.0,,,
+medium,32,svr,0,CS2_37,int16,9174,"411x10 int16 SV + 411 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4120, ""mul"": 9052, ""add"": 4120, ""cmp"": 0, ""exp"": 411, ""div"": 0}",17703,True,,,,,48680.0,411.0,,,
+medium,32,svr,0,CS2_37,int8,5064,"411x10 int8 SV + 411 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4120, ""mul"": 9052, ""add"": 4120, ""cmp"": 0, ""exp"": 411, ""div"": 0}",17703,True,,,,,48680.0,411.0,,,
+medium,32,svr,0,CS2_37,int8all,4653,"411x10 int8 SV + 411 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 4120, ""mul"": 9052, ""add"": 4120, ""cmp"": 0, ""exp"": 411, ""div"": 0}",17703,True,,,,,48680.0,411.0,,,
+medium,32,svr,0,CS2_38,fp32,15884,"359x10 f32 SV + 359 f32 coef + b,gamma + std","{""sub"": 3600, ""mul"": 4318, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",11877,True,,,,,38976.0,359.0,,,
+medium,32,svr,0,CS2_38,int16,8030,"359x10 int16 SV + 359 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,38976.0,359.0,,,
+medium,32,svr,0,CS2_38,int8,4440,"359x10 int8 SV + 359 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,38976.0,359.0,,,
+medium,32,svr,0,CS2_38,int8all,4081,"359x10 int8 SV + 359 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3600, ""mul"": 7908, ""add"": 3600, ""cmp"": 0, ""exp"": 359, ""div"": 0}",15467,True,,,,,38976.0,359.0,,,
+medium,32,rf,0,CS2_35,fp32,2149816,179076 internal + 179176 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1185.6178489702518, ""exp"": 0, ""div"": 0, ""cmp_max"": 1793}",1894,True,,,,,,,179076.0,179176.0,100.0
+medium,32,rf,0,CS2_35,int8,1254320,179076 internal + 179176 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1184.9885583524028, ""exp"": 0, ""div"": 0, ""cmp_max"": 1701}",1822,True,,,,,,,179076.0,179176.0,100.0
+medium,32,rf,0,CS2_36,fp32,2126740,177153 internal + 177253 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1210.2610169491525, ""exp"": 0, ""div"": 0, ""cmp_max"": 1758}",1859,True,,,,,,,177153.0,177253.0,100.0
+medium,32,rf,0,CS2_36,int8,1240859,177153 internal + 177253 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1188.2983050847458, ""exp"": 0, ""div"": 0, ""cmp_max"": 1691}",1812,True,,,,,,,177153.0,177253.0,100.0
+medium,32,rf,0,CS2_37,fp32,2074600,172808 internal + 172908 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1192.7282266526759, ""exp"": 0, ""div"": 0, ""cmp_max"": 1519}",1620,True,,,,,,,172808.0,172908.0,100.0
+medium,32,rf,0,CS2_37,int8,1210444,172808 internal + 172908 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1174.598111227702, ""exp"": 0, ""div"": 0, ""cmp_max"": 1527}",1648,True,,,,,,,172808.0,172908.0,100.0
+medium,32,rf,0,CS2_38,fp32,2040772,169989 internal + 170089 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1212.1409001956947, ""exp"": 0, ""div"": 0, ""cmp_max"": 1681}",1782,True,,,,,,,169989.0,170089.0,100.0
+medium,32,rf,0,CS2_38,int8,1190711,169989 internal + 170089 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1194.7915851272016, ""exp"": 0, ""div"": 0, ""cmp_max"": 1591}",1712,True,,,,,,,169989.0,170089.0,100.0
+medium,32,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 786.2974828375286, ""exp"": 0, ""div"": 0, ""cmp_max"": 911}",1011,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 782.7803203661327, ""exp"": 0, ""div"": 0, ""cmp_max"": 903}",1023,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 813.6949152542373, ""exp"": 0, ""div"": 0, ""cmp_max"": 987}",1087,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 798.2158192090395, ""exp"": 0, ""div"": 0, ""cmp_max"": 978}",1098,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 739.1678908709339, ""exp"": 0, ""div"": 0, ""cmp_max"": 852}",952,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 724.6390346274922, ""exp"": 0, ""div"": 0, ""cmp_max"": 834}",954,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 833.0998043052838, ""exp"": 0, ""div"": 0, ""cmp_max"": 968}",1068,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 823.986301369863, ""exp"": 0, ""div"": 0, ""cmp_max"": 966}",1086,True,,,,,100.0,,3000.0,3100.0,100.0
+medium,32,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+medium,32,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,4,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,4,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,4,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,4,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,4,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,4,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,4,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,4,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,4,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,4,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,4,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,4,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,4,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,126.0,,,,
+wide,4,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,126.0,,,,
+wide,4,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,126.0,,,,
+wide,4,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,75.0,,,,
+wide,4,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,75.0,,,,
+wide,4,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,75.0,,,,
+wide,4,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,123.0,,,,
+wide,4,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,123.0,,,,
+wide,4,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,123.0,,,,
+wide,4,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,139.0,,,,
+wide,4,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,139.0,,,,
+wide,4,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,139.0,,,,
+wide,4,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,39.0,,,,
+wide,4,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,39.0,,,,
+wide,4,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,39.0,,,,
+wide,4,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,35.0,,,,
+wide,4,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,35.0,,,,
+wide,4,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,35.0,,,,
+wide,4,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,84.0,,,,
+wide,4,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,84.0,,,,
+wide,4,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,84.0,,,,
+wide,4,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,44.0,,,,
+wide,4,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,44.0,,,,
+wide,4,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,44.0,,,,
+wide,4,svr,0,CS2_35,fp32,11924,"269x10 f32 SV + 269 f32 coef + b,gamma + std","{""sub"": 2700, ""mul"": 3238, ""add"": 2700, ""cmp"": 0, ""exp"": 269, ""div"": 0}",8907,True,,,,,27277.0,269.0,,,
+wide,4,svr,0,CS2_35,int16,6050,"269x10 int16 SV + 269 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2700, ""mul"": 5928, ""add"": 2700, ""cmp"": 0, ""exp"": 269, ""div"": 0}",11597,True,,,,,27277.0,269.0,,,
+wide,4,svr,0,CS2_35,int8,3360,"269x10 int8 SV + 269 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2700, ""mul"": 5928, ""add"": 2700, ""cmp"": 0, ""exp"": 269, ""div"": 0}",11597,True,,,,,27277.0,269.0,,,
+wide,4,svr,0,CS2_35,int8all,3091,"269x10 int8 SV + 269 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2700, ""mul"": 5928, ""add"": 2700, ""cmp"": 0, ""exp"": 269, ""div"": 0}",11597,True,,,,,27277.0,269.0,,,
+wide,4,svr,0,CS2_36,fp32,11264,"254x10 f32 SV + 254 f32 coef + b,gamma + std","{""sub"": 2550, ""mul"": 3058, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",8412,True,,,,,24124.0,254.0,,,
+wide,4,svr,0,CS2_36,int16,5720,"254x10 int16 SV + 254 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,24124.0,254.0,,,
+wide,4,svr,0,CS2_36,int8,3180,"254x10 int8 SV + 254 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,24124.0,254.0,,,
+wide,4,svr,0,CS2_36,int8all,2926,"254x10 int8 SV + 254 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,24124.0,254.0,,,
+wide,4,svr,0,CS2_37,fp32,12540,"283x10 f32 SV + 283 f32 coef + b,gamma + std","{""sub"": 2840, ""mul"": 3406, ""add"": 2840, ""cmp"": 0, ""exp"": 283, ""div"": 0}",9369,True,,,,,28061.0,283.0,,,
+wide,4,svr,0,CS2_37,int16,6358,"283x10 int16 SV + 283 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2840, ""mul"": 6236, ""add"": 2840, ""cmp"": 0, ""exp"": 283, ""div"": 0}",12199,True,,,,,28061.0,283.0,,,
+wide,4,svr,0,CS2_37,int8,3528,"283x10 int8 SV + 283 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2840, ""mul"": 6236, ""add"": 2840, ""cmp"": 0, ""exp"": 283, ""div"": 0}",12199,True,,,,,28061.0,283.0,,,
+wide,4,svr,0,CS2_37,int8all,3245,"283x10 int8 SV + 283 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2840, ""mul"": 6236, ""add"": 2840, ""cmp"": 0, ""exp"": 283, ""div"": 0}",12199,True,,,,,28061.0,283.0,,,
+wide,4,svr,0,CS2_38,fp32,10296,"232x10 f32 SV + 232 f32 coef + b,gamma + std","{""sub"": 2330, ""mul"": 2794, ""add"": 2330, ""cmp"": 0, ""exp"": 232, ""div"": 0}",7686,True,,,,,26419.0,232.0,,,
+wide,4,svr,0,CS2_38,int16,5236,"232x10 int16 SV + 232 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2330, ""mul"": 5114, ""add"": 2330, ""cmp"": 0, ""exp"": 232, ""div"": 0}",10006,True,,,,,26419.0,232.0,,,
+wide,4,svr,0,CS2_38,int8,2916,"232x10 int8 SV + 232 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2330, ""mul"": 5114, ""add"": 2330, ""cmp"": 0, ""exp"": 232, ""div"": 0}",10006,True,,,,,26419.0,232.0,,,
+wide,4,svr,0,CS2_38,int8all,2684,"232x10 int8 SV + 232 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2330, ""mul"": 5114, ""add"": 2330, ""cmp"": 0, ""exp"": 232, ""div"": 0}",10006,True,,,,,26419.0,232.0,,,
+wide,4,rf,0,CS2_35,fp32,2150296,179116 internal + 179216 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1206.6784897025173, ""exp"": 0, ""div"": 0, ""cmp_max"": 1658}",1759,True,,,,,,,179116.0,179216.0,100.0
+wide,4,rf,0,CS2_35,int8,1254600,179116 internal + 179216 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1209.45766590389, ""exp"": 0, ""div"": 0, ""cmp_max"": 1722}",1843,True,,,,,,,179116.0,179216.0,100.0
+wide,4,rf,0,CS2_36,fp32,2126728,177152 internal + 177252 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1197.3593220338983, ""exp"": 0, ""div"": 0, ""cmp_max"": 1780}",1881,True,,,,,,,177152.0,177252.0,100.0
+wide,4,rf,0,CS2_36,int8,1240852,177152 internal + 177252 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1192.5209039548022, ""exp"": 0, ""div"": 0, ""cmp_max"": 1784}",1905,True,,,,,,,177152.0,177252.0,100.0
+wide,4,rf,0,CS2_37,fp32,2075020,172843 internal + 172943 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1209.2591815320043, ""exp"": 0, ""div"": 0, ""cmp_max"": 1709}",1810,True,,,,,,,172843.0,172943.0,100.0
+wide,4,rf,0,CS2_37,int8,1210689,172843 internal + 172943 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1206.1731374606507, ""exp"": 0, ""div"": 0, ""cmp_max"": 1641}",1762,True,,,,,,,172843.0,172943.0,100.0
+wide,4,rf,0,CS2_38,fp32,2041000,170008 internal + 170108 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1196.9657534246576, ""exp"": 0, ""div"": 0, ""cmp_max"": 1854}",1955,True,,,,,,,170008.0,170108.0,100.0
+wide,4,rf,0,CS2_38,int8,1190844,170008 internal + 170108 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.4667318982388, ""exp"": 0, ""div"": 0, ""cmp_max"": 1905}",2026,True,,,,,,,170008.0,170108.0,100.0
+wide,4,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 755.5389016018306, ""exp"": 0, ""div"": 0, ""cmp_max"": 861}",961,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 754.2997711670481, ""exp"": 0, ""div"": 0, ""cmp_max"": 860}",980,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 767.341242937853, ""exp"": 0, ""div"": 0, ""cmp_max"": 928}",1028,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 755.4474576271186, ""exp"": 0, ""div"": 0, ""cmp_max"": 927}",1047,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 706.894018887723, ""exp"": 0, ""div"": 0, ""cmp_max"": 799}",899,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 703.6526757607555, ""exp"": 0, ""div"": 0, ""cmp_max"": 804}",924,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 768.9774951076321, ""exp"": 0, ""div"": 0, ""cmp_max"": 876}",976,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 768.2759295499021, ""exp"": 0, ""div"": 0, ""cmp_max"": 878}",998,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,4,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,4,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,8,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,8,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,8,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,8,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,8,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,8,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,8,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,8,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,8,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,8,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,8,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,8,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,8,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,110.0,,,,
+wide,8,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,110.0,,,,
+wide,8,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,110.0,,,,
+wide,8,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,84.0,,,,
+wide,8,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,84.0,,,,
+wide,8,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,84.0,,,,
+wide,8,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,109.0,,,,
+wide,8,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,109.0,,,,
+wide,8,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,109.0,,,,
+wide,8,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,96.0,,,,
+wide,8,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,96.0,,,,
+wide,8,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,96.0,,,,
+wide,8,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,65.0,,,,
+wide,8,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,65.0,,,,
+wide,8,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,65.0,,,,
+wide,8,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,66.0,,,,
+wide,8,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,66.0,,,,
+wide,8,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,66.0,,,,
+wide,8,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,54.0,,,,
+wide,8,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,54.0,,,,
+wide,8,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,54.0,,,,
+wide,8,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,48.0,,,,
+wide,8,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,48.0,,,,
+wide,8,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,48.0,,,,
+wide,8,svr,0,CS2_35,fp32,12892,"291x10 f32 SV + 291 f32 coef + b,gamma + std","{""sub"": 2920, ""mul"": 3502, ""add"": 2920, ""cmp"": 0, ""exp"": 291, ""div"": 0}",9633,True,,,,,29855.0,291.0,,,
+wide,8,svr,0,CS2_35,int16,6534,"291x10 int16 SV + 291 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2920, ""mul"": 6412, ""add"": 2920, ""cmp"": 0, ""exp"": 291, ""div"": 0}",12543,True,,,,,29855.0,291.0,,,
+wide,8,svr,0,CS2_35,int8,3624,"291x10 int8 SV + 291 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2920, ""mul"": 6412, ""add"": 2920, ""cmp"": 0, ""exp"": 291, ""div"": 0}",12543,True,,,,,29855.0,291.0,,,
+wide,8,svr,0,CS2_35,int8all,3333,"291x10 int8 SV + 291 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2920, ""mul"": 6412, ""add"": 2920, ""cmp"": 0, ""exp"": 291, ""div"": 0}",12543,True,,,,,29855.0,291.0,,,
+wide,8,svr,0,CS2_36,fp32,12144,"274x10 f32 SV + 274 f32 coef + b,gamma + std","{""sub"": 2750, ""mul"": 3298, ""add"": 2750, ""cmp"": 0, ""exp"": 274, ""div"": 0}",9072,True,,,,,27284.0,274.0,,,
+wide,8,svr,0,CS2_36,int16,6160,"274x10 int16 SV + 274 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2750, ""mul"": 6038, ""add"": 2750, ""cmp"": 0, ""exp"": 274, ""div"": 0}",11812,True,,,,,27284.0,274.0,,,
+wide,8,svr,0,CS2_36,int8,3420,"274x10 int8 SV + 274 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2750, ""mul"": 6038, ""add"": 2750, ""cmp"": 0, ""exp"": 274, ""div"": 0}",11812,True,,,,,27284.0,274.0,,,
+wide,8,svr,0,CS2_36,int8all,3146,"274x10 int8 SV + 274 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2750, ""mul"": 6038, ""add"": 2750, ""cmp"": 0, ""exp"": 274, ""div"": 0}",11812,True,,,,,27284.0,274.0,,,
+wide,8,svr,0,CS2_37,fp32,12628,"285x10 f32 SV + 285 f32 coef + b,gamma + std","{""sub"": 2860, ""mul"": 3430, ""add"": 2860, ""cmp"": 0, ""exp"": 285, ""div"": 0}",9435,True,,,,,27734.0,285.0,,,
+wide,8,svr,0,CS2_37,int16,6402,"285x10 int16 SV + 285 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2860, ""mul"": 6280, ""add"": 2860, ""cmp"": 0, ""exp"": 285, ""div"": 0}",12285,True,,,,,27734.0,285.0,,,
+wide,8,svr,0,CS2_37,int8,3552,"285x10 int8 SV + 285 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2860, ""mul"": 6280, ""add"": 2860, ""cmp"": 0, ""exp"": 285, ""div"": 0}",12285,True,,,,,27734.0,285.0,,,
+wide,8,svr,0,CS2_37,int8all,3267,"285x10 int8 SV + 285 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2860, ""mul"": 6280, ""add"": 2860, ""cmp"": 0, ""exp"": 285, ""div"": 0}",12285,True,,,,,27734.0,285.0,,,
+wide,8,svr,0,CS2_38,fp32,11352,"256x10 f32 SV + 256 f32 coef + b,gamma + std","{""sub"": 2570, ""mul"": 3082, ""add"": 2570, ""cmp"": 0, ""exp"": 256, ""div"": 0}",8478,True,,,,,22864.0,256.0,,,
+wide,8,svr,0,CS2_38,int16,5764,"256x10 int16 SV + 256 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2570, ""mul"": 5642, ""add"": 2570, ""cmp"": 0, ""exp"": 256, ""div"": 0}",11038,True,,,,,22864.0,256.0,,,
+wide,8,svr,0,CS2_38,int8,3204,"256x10 int8 SV + 256 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2570, ""mul"": 5642, ""add"": 2570, ""cmp"": 0, ""exp"": 256, ""div"": 0}",11038,True,,,,,22864.0,256.0,,,
+wide,8,svr,0,CS2_38,int8all,2948,"256x10 int8 SV + 256 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2570, ""mul"": 5642, ""add"": 2570, ""cmp"": 0, ""exp"": 256, ""div"": 0}",11038,True,,,,,22864.0,256.0,,,
+wide,8,rf,0,CS2_35,fp32,2149900,179083 internal + 179183 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1149.6029748283752, ""exp"": 0, ""div"": 0, ""cmp_max"": 1639}",1740,True,,,,,,,179083.0,179183.0,100.0
+wide,8,rf,0,CS2_35,int8,1254369,179083 internal + 179183 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1147.2711670480548, ""exp"": 0, ""div"": 0, ""cmp_max"": 1636}",1757,True,,,,,,,179083.0,179183.0,100.0
+wide,8,rf,0,CS2_36,fp32,2126704,177150 internal + 177250 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1196.328813559322, ""exp"": 0, ""div"": 0, ""cmp_max"": 1707}",1808,True,,,,,,,177150.0,177250.0,100.0
+wide,8,rf,0,CS2_36,int8,1240838,177150 internal + 177250 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1192.0621468926554, ""exp"": 0, ""div"": 0, ""cmp_max"": 1681}",1802,True,,,,,,,177150.0,177250.0,100.0
+wide,8,rf,0,CS2_37,fp32,2074720,172818 internal + 172918 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1195.96537250787, ""exp"": 0, ""div"": 0, ""cmp_max"": 1651}",1752,True,,,,,,,172818.0,172918.0,100.0
+wide,8,rf,0,CS2_37,int8,1210514,172818 internal + 172918 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1193.4165792235046, ""exp"": 0, ""div"": 0, ""cmp_max"": 1652}",1773,True,,,,,,,172818.0,172918.0,100.0
+wide,8,rf,0,CS2_38,fp32,2040868,169997 internal + 170097 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1203.6624266144813, ""exp"": 0, ""div"": 0, ""cmp_max"": 1987}",2088,True,,,,,,,169997.0,170097.0,100.0
+wide,8,rf,0,CS2_38,int8,1190767,169997 internal + 170097 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1198.8238747553817, ""exp"": 0, ""div"": 0, ""cmp_max"": 1977}",2098,True,,,,,,,169997.0,170097.0,100.0
+wide,8,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 751.5480549199085, ""exp"": 0, ""div"": 0, ""cmp_max"": 867}",967,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 750.7334096109839, ""exp"": 0, ""div"": 0, ""cmp_max"": 871}",991,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 759.9276836158192, ""exp"": 0, ""div"": 0, ""cmp_max"": 909}",1009,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 759.0497175141243, ""exp"": 0, ""div"": 0, ""cmp_max"": 908}",1028,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 687.1983210912906, ""exp"": 0, ""div"": 0, ""cmp_max"": 827}",927,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 685.1741867785939, ""exp"": 0, ""div"": 0, ""cmp_max"": 822}",942,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 789.3180039138944, ""exp"": 0, ""div"": 0, ""cmp_max"": 882}",982,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 787.5714285714286, ""exp"": 0, ""div"": 0, ""cmp_max"": 876}",996,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,8,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,8,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,16,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,16,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,16,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,16,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,16,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,16,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,16,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,16,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,16,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,16,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,16,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,16,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,16,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,119.0,,,,
+wide,16,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,119.0,,,,
+wide,16,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,119.0,,,,
+wide,16,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,73.0,,,,
+wide,16,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,73.0,,,,
+wide,16,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,73.0,,,,
+wide,16,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,108.0,,,,
+wide,16,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,108.0,,,,
+wide,16,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,108.0,,,,
+wide,16,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,112.0,,,,
+wide,16,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,112.0,,,,
+wide,16,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,112.0,,,,
+wide,16,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,38.0,,,,
+wide,16,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,38.0,,,,
+wide,16,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,38.0,,,,
+wide,16,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,63.0,,,,
+wide,16,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,63.0,,,,
+wide,16,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,63.0,,,,
+wide,16,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,68.0,,,,
+wide,16,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,68.0,,,,
+wide,16,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,68.0,,,,
+wide,16,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,45.0,,,,
+wide,16,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,45.0,,,,
+wide,16,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,45.0,,,,
+wide,16,svr,0,CS2_35,fp32,13332,"301x10 f32 SV + 301 f32 coef + b,gamma + std","{""sub"": 3020, ""mul"": 3622, ""add"": 3020, ""cmp"": 0, ""exp"": 301, ""div"": 0}",9963,True,,,,,35484.0,301.0,,,
+wide,16,svr,0,CS2_35,int16,6754,"301x10 int16 SV + 301 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3020, ""mul"": 6632, ""add"": 3020, ""cmp"": 0, ""exp"": 301, ""div"": 0}",12973,True,,,,,35484.0,301.0,,,
+wide,16,svr,0,CS2_35,int8,3744,"301x10 int8 SV + 301 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3020, ""mul"": 6632, ""add"": 3020, ""cmp"": 0, ""exp"": 301, ""div"": 0}",12973,True,,,,,35484.0,301.0,,,
+wide,16,svr,0,CS2_35,int8all,3443,"301x10 int8 SV + 301 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 3020, ""mul"": 6632, ""add"": 3020, ""cmp"": 0, ""exp"": 301, ""div"": 0}",12973,True,,,,,35484.0,301.0,,,
+wide,16,svr,0,CS2_36,fp32,12408,"280x10 f32 SV + 280 f32 coef + b,gamma + std","{""sub"": 2810, ""mul"": 3370, ""add"": 2810, ""cmp"": 0, ""exp"": 280, ""div"": 0}",9270,True,,,,,29432.0,280.0,,,
+wide,16,svr,0,CS2_36,int16,6292,"280x10 int16 SV + 280 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2810, ""mul"": 6170, ""add"": 2810, ""cmp"": 0, ""exp"": 280, ""div"": 0}",12070,True,,,,,29432.0,280.0,,,
+wide,16,svr,0,CS2_36,int8,3492,"280x10 int8 SV + 280 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2810, ""mul"": 6170, ""add"": 2810, ""cmp"": 0, ""exp"": 280, ""div"": 0}",12070,True,,,,,29432.0,280.0,,,
+wide,16,svr,0,CS2_36,int8all,3212,"280x10 int8 SV + 280 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2810, ""mul"": 6170, ""add"": 2810, ""cmp"": 0, ""exp"": 280, ""div"": 0}",12070,True,,,,,29432.0,280.0,,,
+wide,16,svr,0,CS2_37,fp32,13068,"295x10 f32 SV + 295 f32 coef + b,gamma + std","{""sub"": 2960, ""mul"": 3550, ""add"": 2960, ""cmp"": 0, ""exp"": 295, ""div"": 0}",9765,True,,,,,34036.0,295.0,,,
+wide,16,svr,0,CS2_37,int16,6622,"295x10 int16 SV + 295 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2960, ""mul"": 6500, ""add"": 2960, ""cmp"": 0, ""exp"": 295, ""div"": 0}",12715,True,,,,,34036.0,295.0,,,
+wide,16,svr,0,CS2_37,int8,3672,"295x10 int8 SV + 295 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2960, ""mul"": 6500, ""add"": 2960, ""cmp"": 0, ""exp"": 295, ""div"": 0}",12715,True,,,,,34036.0,295.0,,,
+wide,16,svr,0,CS2_37,int8all,3377,"295x10 int8 SV + 295 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2960, ""mul"": 6500, ""add"": 2960, ""cmp"": 0, ""exp"": 295, ""div"": 0}",12715,True,,,,,34036.0,295.0,,,
+wide,16,svr,0,CS2_38,fp32,10208,"230x10 f32 SV + 230 f32 coef + b,gamma + std","{""sub"": 2310, ""mul"": 2770, ""add"": 2310, ""cmp"": 0, ""exp"": 230, ""div"": 0}",7620,True,,,,,27825.0,230.0,,,
+wide,16,svr,0,CS2_38,int16,5192,"230x10 int16 SV + 230 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2310, ""mul"": 5070, ""add"": 2310, ""cmp"": 0, ""exp"": 230, ""div"": 0}",9920,True,,,,,27825.0,230.0,,,
+wide,16,svr,0,CS2_38,int8,2892,"230x10 int8 SV + 230 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2310, ""mul"": 5070, ""add"": 2310, ""cmp"": 0, ""exp"": 230, ""div"": 0}",9920,True,,,,,27825.0,230.0,,,
+wide,16,svr,0,CS2_38,int8all,2662,"230x10 int8 SV + 230 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2310, ""mul"": 5070, ""add"": 2310, ""cmp"": 0, ""exp"": 230, ""div"": 0}",9920,True,,,,,27825.0,230.0,,,
+wide,16,rf,0,CS2_35,fp32,2150200,179108 internal + 179208 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1172.482837528604, ""exp"": 0, ""div"": 0, ""cmp_max"": 1689}",1790,True,,,,,,,179108.0,179208.0,100.0
+wide,16,rf,0,CS2_35,int8,1254544,179108 internal + 179208 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1172.4897025171624, ""exp"": 0, ""div"": 0, ""cmp_max"": 1681}",1802,True,,,,,,,179108.0,179208.0,100.0
+wide,16,rf,0,CS2_36,fp32,2126920,177168 internal + 177268 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1191.1604519774012, ""exp"": 0, ""div"": 0, ""cmp_max"": 1687}",1788,True,,,,,,,177168.0,177268.0,100.0
+wide,16,rf,0,CS2_36,int8,1240964,177168 internal + 177268 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1186.5118644067798, ""exp"": 0, ""div"": 0, ""cmp_max"": 1623}",1744,True,,,,,,,177168.0,177268.0,100.0
+wide,16,rf,0,CS2_37,fp32,2074612,172809 internal + 172909 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1202.9517313746064, ""exp"": 0, ""div"": 0, ""cmp_max"": 1643}",1744,True,,,,,,,172809.0,172909.0,100.0
+wide,16,rf,0,CS2_37,int8,1210451,172809 internal + 172909 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1195.7555089192026, ""exp"": 0, ""div"": 0, ""cmp_max"": 1654}",1775,True,,,,,,,172809.0,172909.0,100.0
+wide,16,rf,0,CS2_38,fp32,2041000,170008 internal + 170108 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1193.10469667319, ""exp"": 0, ""div"": 0, ""cmp_max"": 1808}",1909,True,,,,,,,170008.0,170108.0,100.0
+wide,16,rf,0,CS2_38,int8,1190844,170008 internal + 170108 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1184.8023483365948, ""exp"": 0, ""div"": 0, ""cmp_max"": 1732}",1853,True,,,,,,,170008.0,170108.0,100.0
+wide,16,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 768.3340961098398, ""exp"": 0, ""div"": 0, ""cmp_max"": 863}",963,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 767.5983981693364, ""exp"": 0, ""div"": 0, ""cmp_max"": 865}",985,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 755.2598870056497, ""exp"": 0, ""div"": 0, ""cmp_max"": 883}",983,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 749.9186440677967, ""exp"": 0, ""div"": 0, ""cmp_max"": 884}",1004,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 698.4637985309549, ""exp"": 0, ""div"": 0, ""cmp_max"": 818}",918,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 692.4931794333683, ""exp"": 0, ""div"": 0, ""cmp_max"": 819}",939,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 788.3933463796477, ""exp"": 0, ""div"": 0, ""cmp_max"": 908}",1008,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 784.2191780821918, ""exp"": 0, ""div"": 0, ""cmp_max"": 908}",1028,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,16,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,16,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,32,ridge,0,CS2_35,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,32,ridge,0,CS2_35,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,32,ridge,0,CS2_35,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,32,ridge,0,CS2_36,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,32,ridge,0,CS2_36,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,32,ridge,0,CS2_36,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,32,ridge,0,CS2_37,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,32,ridge,0,CS2_37,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,32,ridge,0,CS2_37,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,32,ridge,0,CS2_38,fp32,44,"11 float32 (weights+biases, standardiser folded)","{""mul"": 10, ""add"": 11, ""cmp"": 0, ""exp"": 0, ""div"": 0}",21,True,,,,,,,,,
+wide,32,ridge,0,CS2_38,int8,102,10 int8 W + 1 int32 b + 2 f32 scales + 20 f32 std,"{""mul"": 31, ""add"": 21, ""cmp"": 20, ""exp"": 0, ""div"": 0}",72,True,10.0,4.0,8.0,80.0,,,,,
+wide,32,ridge,0,CS2_38,int8_folded,22,10 int8 W + 1 int32 b + 2 f32 scales + 0 f32 std,"{""mul"": 21, ""add"": 11, ""cmp"": 20, ""exp"": 0, ""div"": 0}",52,True,10.0,4.0,8.0,0.0,,,,,
+wide,32,mlp8,0,CS2_35,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,195.0,,,,
+wide,32,mlp8,0,CS2_35,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,195.0,,,,
+wide,32,mlp8,0,CS2_35,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,195.0,,,,
+wide,32,mlp8,0,CS2_36,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,106.0,,,,
+wide,32,mlp8,0,CS2_36,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,106.0,,,,
+wide,32,mlp8,0,CS2_36,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,106.0,,,,
+wide,32,mlp8,0,CS2_37,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,114.0,,,,
+wide,32,mlp8,0,CS2_37,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,114.0,,,,
+wide,32,mlp8,0,CS2_37,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,114.0,,,,
+wide,32,mlp8,0,CS2_38,fp32,388,"97 float32 (weights+biases, standardiser folded)","{""mul"": 88, ""add"": 97, ""cmp"": 8, ""exp"": 0, ""div"": 0}",193,True,,,,,116.0,,,,
+wide,32,mlp8,0,CS2_38,int8,220,88 int8 W + 9 int32 b + 4 f32 scales + 20 f32 std,"{""mul"": 125, ""add"": 107, ""cmp"": 44, ""exp"": 0, ""div"": 0}",276,True,88.0,36.0,16.0,80.0,116.0,,,,
+wide,32,mlp8,0,CS2_38,int8_folded,140,88 int8 W + 9 int32 b + 4 f32 scales + 0 f32 std,"{""mul"": 115, ""add"": 97, ""cmp"": 44, ""exp"": 0, ""div"": 0}",256,True,88.0,36.0,16.0,0.0,116.0,,,,
+wide,32,mlp32x16,0,CS2_35,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,48.0,,,,
+wide,32,mlp32x16,0,CS2_35,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,48.0,,,,
+wide,32,mlp32x16,0,CS2_35,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,48.0,,,,
+wide,32,mlp32x16,0,CS2_36,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,67.0,,,,
+wide,32,mlp32x16,0,CS2_36,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,67.0,,,,
+wide,32,mlp32x16,0,CS2_36,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,67.0,,,,
+wide,32,mlp32x16,0,CS2_37,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,64.0,,,,
+wide,32,mlp32x16,0,CS2_37,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,64.0,,,,
+wide,32,mlp32x16,0,CS2_37,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,64.0,,,,
+wide,32,mlp32x16,0,CS2_38,fp32,3588,"897 float32 (weights+biases, standardiser folded)","{""mul"": 848, ""add"": 897, ""cmp"": 48, ""exp"": 0, ""div"": 0}",1793,True,,,,,54.0,,,,
+wide,32,mlp32x16,0,CS2_38,int8,1148,848 int8 W + 49 int32 b + 6 f32 scales + 20 f32 std,"{""mul"": 965, ""add"": 907, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2036,True,848.0,196.0,24.0,80.0,54.0,,,,
+wide,32,mlp32x16,0,CS2_38,int8_folded,1068,848 int8 W + 49 int32 b + 6 f32 scales + 0 f32 std,"{""mul"": 955, ""add"": 897, ""cmp"": 164, ""exp"": 0, ""div"": 0}",2016,True,848.0,196.0,24.0,0.0,54.0,,,,
+wide,32,svr,0,CS2_35,fp32,11572,"261x10 f32 SV + 261 f32 coef + b,gamma + std","{""sub"": 2620, ""mul"": 3142, ""add"": 2620, ""cmp"": 0, ""exp"": 261, ""div"": 0}",8643,True,,,,,26203.0,261.0,,,
+wide,32,svr,0,CS2_35,int16,5874,"261x10 int16 SV + 261 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2620, ""mul"": 5752, ""add"": 2620, ""cmp"": 0, ""exp"": 261, ""div"": 0}",11253,True,,,,,26203.0,261.0,,,
+wide,32,svr,0,CS2_35,int8,3264,"261x10 int8 SV + 261 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2620, ""mul"": 5752, ""add"": 2620, ""cmp"": 0, ""exp"": 261, ""div"": 0}",11253,True,,,,,26203.0,261.0,,,
+wide,32,svr,0,CS2_35,int8all,3003,"261x10 int8 SV + 261 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2620, ""mul"": 5752, ""add"": 2620, ""cmp"": 0, ""exp"": 261, ""div"": 0}",11253,True,,,,,26203.0,261.0,,,
+wide,32,svr,0,CS2_36,fp32,11264,"254x10 f32 SV + 254 f32 coef + b,gamma + std","{""sub"": 2550, ""mul"": 3058, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",8412,True,,,,,22863.0,254.0,,,
+wide,32,svr,0,CS2_36,int16,5720,"254x10 int16 SV + 254 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,22863.0,254.0,,,
+wide,32,svr,0,CS2_36,int8,3180,"254x10 int8 SV + 254 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,22863.0,254.0,,,
+wide,32,svr,0,CS2_36,int8all,2926,"254x10 int8 SV + 254 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2550, ""mul"": 5598, ""add"": 2550, ""cmp"": 0, ""exp"": 254, ""div"": 0}",10952,True,,,,,22863.0,254.0,,,
+wide,32,svr,0,CS2_37,fp32,12364,"279x10 f32 SV + 279 f32 coef + b,gamma + std","{""sub"": 2800, ""mul"": 3358, ""add"": 2800, ""cmp"": 0, ""exp"": 279, ""div"": 0}",9237,True,,,,,26960.0,279.0,,,
+wide,32,svr,0,CS2_37,int16,6270,"279x10 int16 SV + 279 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2800, ""mul"": 6148, ""add"": 2800, ""cmp"": 0, ""exp"": 279, ""div"": 0}",12027,True,,,,,26960.0,279.0,,,
+wide,32,svr,0,CS2_37,int8,3480,"279x10 int8 SV + 279 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2800, ""mul"": 6148, ""add"": 2800, ""cmp"": 0, ""exp"": 279, ""div"": 0}",12027,True,,,,,26960.0,279.0,,,
+wide,32,svr,0,CS2_37,int8all,3201,"279x10 int8 SV + 279 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2800, ""mul"": 6148, ""add"": 2800, ""cmp"": 0, ""exp"": 279, ""div"": 0}",12027,True,,,,,26960.0,279.0,,,
+wide,32,svr,0,CS2_38,fp32,10736,"242x10 f32 SV + 242 f32 coef + b,gamma + std","{""sub"": 2430, ""mul"": 2914, ""add"": 2430, ""cmp"": 0, ""exp"": 242, ""div"": 0}",8016,True,,,,,21699.0,242.0,,,
+wide,32,svr,0,CS2_38,int16,5456,"242x10 int16 SV + 242 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2430, ""mul"": 5334, ""add"": 2430, ""cmp"": 0, ""exp"": 242, ""div"": 0}",10436,True,,,,,21699.0,242.0,,,
+wide,32,svr,0,CS2_38,int8,3036,"242x10 int8 SV + 242 int16 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2430, ""mul"": 5334, ""add"": 2430, ""cmp"": 0, ""exp"": 242, ""div"": 0}",10436,True,,,,,21699.0,242.0,,,
+wide,32,svr,0,CS2_38,int8all,2794,"242x10 int8 SV + 242 int8 coef + 10+1 f32 scales + b,gamma + std","{""sub"": 2430, ""mul"": 5334, ""add"": 2430, ""cmp"": 0, ""exp"": 242, ""div"": 0}",10436,True,,,,,21699.0,242.0,,,
+wide,32,rf,0,CS2_35,fp32,2149996,179091 internal + 179191 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1176.8386727688787, ""exp"": 0, ""div"": 0, ""cmp_max"": 1639}",1740,True,,,,,,,179091.0,179191.0,100.0
+wide,32,rf,0,CS2_35,int8,1254425,179091 internal + 179191 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1171.8878718535468, ""exp"": 0, ""div"": 0, ""cmp_max"": 1611}",1732,True,,,,,,,179091.0,179191.0,100.0
+wide,32,rf,0,CS2_36,fp32,2126764,177155 internal + 177255 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1199.322033898305, ""exp"": 0, ""div"": 0, ""cmp_max"": 1672}",1773,True,,,,,,,177155.0,177255.0,100.0
+wide,32,rf,0,CS2_36,int8,1240873,177155 internal + 177255 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1192.722033898305, ""exp"": 0, ""div"": 0, ""cmp_max"": 1584}",1705,True,,,,,,,177155.0,177255.0,100.0
+wide,32,rf,0,CS2_37,fp32,2074708,172817 internal + 172917 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1196.504721930745, ""exp"": 0, ""div"": 0, ""cmp_max"": 1632}",1733,True,,,,,,,172817.0,172917.0,100.0
+wide,32,rf,0,CS2_37,int8,1210507,172817 internal + 172917 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1177.7649527806925, ""exp"": 0, ""div"": 0, ""cmp_max"": 1607}",1728,True,,,,,,,172817.0,172917.0,100.0
+wide,32,rf,0,CS2_38,fp32,2040844,169995 internal + 170095 leaves in 100 trees (fp32 encoding),"{""mul"": 1, ""add"": 100, ""cmp"": 1199.8434442270059, ""exp"": 0, ""div"": 0, ""cmp_max"": 1783}",1884,True,,,,,,,169995.0,170095.0,100.0
+wide,32,rf,0,CS2_38,int8,1190753,169995 internal + 170095 leaves in 100 trees (int8 encoding),"{""mul"": 11, ""add"": 110, ""cmp"": 1183.3610567514677, ""exp"": 0, ""div"": 0, ""cmp_max"": 1710}",1831,True,,,,,,,169995.0,170095.0,100.0
+wide,32,hgb,0,CS2_35,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 752.9862700228833, ""exp"": 0, ""div"": 0, ""cmp_max"": 864}",964,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_35,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 747.8272311212814, ""exp"": 0, ""div"": 0, ""cmp_max"": 862}",982,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_36,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 757.6474576271187, ""exp"": 0, ""div"": 0, ""cmp_max"": 918}",1018,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_36,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 757.0960451977401, ""exp"": 0, ""div"": 0, ""cmp_max"": 915}",1035,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_37,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 683.0419727177335, ""exp"": 0, ""div"": 0, ""cmp_max"": 792}",892,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_37,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 673.7397691500524, ""exp"": 0, ""div"": 0, ""cmp_max"": 800}",920,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_38,fp32,36904,3000 internal + 3100 leaves in 100 trees (fp32 encoding),"{""mul"": 0, ""add"": 100, ""cmp"": 780.2945205479452, ""exp"": 0, ""div"": 0, ""cmp_max"": 893}",993,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,hgb,0,CS2_38,int8,21788,3000 internal + 3100 leaves in 100 trees (int8 encoding),"{""mul"": 10, ""add"": 110, ""cmp"": 775.8238747553816, ""exp"": 0, ""div"": 0, ""cmp_max"": 883}",1003,True,,,,,100.0,,3000.0,3100.0,100.0
+wide,32,ridge_dur1,0,CS2_35,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_35,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_36,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_36,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_37,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_37,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_38,fp32,8,"2 float32 (slope, intercept)","{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0}",2,True,,,,,,,,,
+wide,32,ridge_dur1,0,CS2_38,fixed16,5,int16 slope + int16 intercept + uint8 shift,"{""mul"": 1, ""add"": 1, ""cmp"": 0, ""exp"": 0, ""div"": 0, ""shift"": 1}",3,True,,,,,,,,,

@@ -1,0 +1,4 @@
+window,n,model,rep,rmse,bytes_med,bytes_min,bytes_max,ops
+wide,4,ridge_dur1,fixed16,0.013288142807438317,5.0,5,5,3.0
+wide,16,ridge,fp32,0.010761209078587419,44.0,44,44,21.0
+wide,4,svr,int16,0.010433204189914577,5852.0,5522,6358,11210.0

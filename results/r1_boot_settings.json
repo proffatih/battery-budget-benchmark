@@ -1,0 +1,6 @@
+{
+ "B": 4000,
+ "block": 25,
+ "seed": 20261110,
+ "levels": "cells with replacement, then moving-block cycles"
+}
